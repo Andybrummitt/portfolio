@@ -2,22 +2,108 @@
     background: #595959;
 }
 
-.intro-container {
+.upper-container {
+    background: #ff9000;
+    height: 75px;
+    border-bottom-right-radius: 10rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: white;
+    -webkit-text-stroke: 0.05rem white;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    span {
+        transform: translateX(-50%);
+        animation: loopScrollText 8s infinite ease-in-out;
+    }
+}
+
+@keyframes loopScrollText {
+    from {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+
+.lower-container {
+    @extend .upper-container;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 0;
+}
+
+.intro-name {
     text-align: center;
     padding: 1rem;
     color: white;
     position: relative;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    height: 400px;
 }
 
-.intro-name {
-    animation: fallBounce 2s forwards;
+.cta-button {
+    border: 0.1rem solid white;
+    background: transparent;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    top: 53vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    span {
+        margin-right: 0.5rem;
+    }
+}
+
+.cta-button-animation {
+    animation: ctaButtonAppear 2s forwards;
+}
+
+@keyframes ctaButtonAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-intro-title {
+    animation: introTitleAnimation 2s forwards; 
+}
+
+.intro-title {
+    font-size: 2.5rem;
+}
+
+@keyframes introTitleAnimation {
+}
+
+.intro-name-span {
+    animation: fallBounce 3s forwards;
     font-size: 2rem;
-    transform: translateY(-400px);
+    transform: translateY(-300px);
     white-space: pre;
 }
 
@@ -48,5 +134,13 @@
     100% {
         transform: scale(1, 1)
     }
-    
 }
+
+//exit animation {
+    // 95% {
+    //     transform: rotate(-180deg);
+    // }
+    // 100% {
+    //     transform: translateY(-300px);
+    // }
+// }
