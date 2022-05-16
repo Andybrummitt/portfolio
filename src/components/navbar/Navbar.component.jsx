@@ -13,10 +13,6 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faHouse} />
             </a>
         </div>
-        <ul className="nav-links">
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
         <ul className="info-links">
             <li><a href="">
             <FontAwesomeIcon icon={faLinkedin} />

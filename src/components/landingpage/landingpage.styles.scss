@@ -1,0 +1,52 @@
+.page-container {
+    background: #595959;
+}
+
+.intro-container {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro-name {
+    animation: fallBounce 2s forwards;
+    font-size: 2rem;
+    transform: translateY(-400px);
+    white-space: pre;
+}
+
+.orange-bold {
+    color: #ff9000;
+    font-weight: bold;
+}
+
+@keyframes fallBounce {
+    0% {
+        transform: translateY(-300px);
+    }
+    20% {
+        transform: scale(1.1, 0.8)
+    }
+    30% {
+        transform: translateY(0);   
+    }
+    50% {
+        transform: scale(1.15, 0.7);
+    }
+    60% {
+        transform: scale(0.9, 1.1)
+    }
+    80% {
+        transform: scale(1.1, 0.8)
+    }
+    100% {
+        transform: scale(1, 1)
+    }
+    
+}

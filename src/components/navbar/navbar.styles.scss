@@ -1,11 +1,11 @@
 nav {
     display: flex;
     background: #363636;
+    justify-content: space-between;
 
     ul {
         display: flex;
         list-style-type: none;
-        justify-content: center;
         align-items: center;
 
         li {
@@ -20,27 +20,10 @@ nav {
 }
 
 .home-link {
-    width: 15%;
+    width: 20%;
     padding: 0.5rem;
     color: #ff9000;
-    align-self: center;
-}
-
-.nav-links {
-    width: 65%;
-
-    li {
-        padding: 0.5rem 1rem;
-    }
-
-    li:nth-child(2) a {
-        color: #ff9000;
-    }
-}
-
-.info-links {
-    width: 20%;
-    justify-content: flex-end;
+    margin-right: auto;
 }
 
 // -------------------- HOVER -------------------
@@ -84,12 +67,6 @@ nav {
             }
         }
 
-        .nav-links {
-            li {
-                padding: 0.8rem 2.5rem;
-            }
-        }
-
         .home-link {
             font-size: 1.5rem;
             padding: 0.8rem 1rem;
@@ -104,12 +81,6 @@ nav {
             li {
                 padding: 1.2rem;
                 font-size: 2rem; 
-            }
-        }
-
-        .nav-links {
-            li {
-                padding: 1.2rem 8rem;
             }
         }
 
