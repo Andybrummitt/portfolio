@@ -1,5 +1,6 @@
 .page-container {
     background: #595959;
+    height: 90vh;
 }
 
 .upper-container {
@@ -17,18 +18,21 @@
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     span {
-        transform: translateX(-50%);
-        animation: loopScrollText 8s infinite ease-in-out;
+        transform: translateX(-100%);
+        animation-name: loopScrollText;
+        animation-duration: 8s;
+        animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        animation-iteration-count: infinite;
     }
 }
 
 @keyframes loopScrollText {
     from {
-        transform: translateX(-100%)
+        transform: translateX(100%)
     }
 
     to {
-        transform: translateX(100%)
+        transform: translateX(-100%)
     }
 }
 
@@ -37,6 +41,20 @@
     @extend .upper-container;
     border-top-left-radius: 10rem;
     border-bottom-right-radius: 0;
+    span {
+        animation-delay: 1s;
+    }
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.intro-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-name {
@@ -46,31 +64,27 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     overflow: hidden;
-    height: 400px;
+    height: 150px;
 }
 
 .cta-button {
     border: 0.1rem solid white;
-    background: transparent;
     padding: 0.5rem;
     font-size: 1.2rem;
-    color: white;
-    position: absolute;
-    top: 53vh;
-    left: 50vw;
-    transform: translateX(-50%);
     opacity: 0;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    width: fit-content;
+    background: transparent;
+    cursor: pointer;
     a {
         color: white;
         font-size: 1rem;
     }
-
     span {
         margin-right: 0.5rem;
     }
