@@ -1,0 +1,70 @@
+@use "../../styles/variables";
+
+.about-me-container {
+    height: 100vh;
+    background: variables.$orange-color;
+}
+
+.title-container {
+    height: 75px;
+    border-bottom-right-radius: 5rem;
+    background: variables.$bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 0.1rem solid white;
+}
+
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    section {
+        margin: 1rem;
+    }
+
+    .intro-section {
+        padding: 0.5rem;
+        height: 170px;
+        width: 100%;
+        background: variables.$bg-color;
+        color: white;
+        border-radius: 1rem;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        a {
+            font-weight: bold;
+            color: variables.$orange-color;
+        }
+    }
+    .skills-section {
+        padding: 0.5rem;
+        height: 250px;
+        width: 100%;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        h3 {
+            text-align: center;
+        }
+        ul {
+            margin: 1rem 0;
+            li {
+                display: flex;
+                justify-content: space-around;
+                padding: 0.1rem 0;
+                margin: 0.05rem 0;
+                border-bottom: 0.05rem solid grey;
+            }
+        }
+    }
+}
+
+.star-rating-container {
+    margin-left: auto;
+    color: rgb(0, 0, 0, 0.1);
+}

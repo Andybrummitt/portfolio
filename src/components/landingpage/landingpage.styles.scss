@@ -1,10 +1,12 @@
+@use "../../styles/variables";
+
 .page-container {
-    background: #595959;
+    background: variables.$bg-color;
     height: 90vh;
 }
 
 .upper-container {
-    background: #ff9000;
+    background: variables.$orange-color;
     height: 75px;
     border-bottom-right-radius: 10rem;  
     display: flex;
@@ -122,7 +124,7 @@
 }
 
 .orange-bold {
-    color: #ff9000;
+    color: variables.$orange-color;
     font-weight: bold;
 }
 

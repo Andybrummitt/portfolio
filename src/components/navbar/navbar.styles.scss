@@ -1,3 +1,5 @@
+@use "../../styles/variables";
+
 nav {
     display: flex;
     background: #363636;
@@ -25,7 +27,7 @@ nav {
 .home-link {
     width: 20%;
     padding: 0.5rem;
-    color: #ff9000;
+    color: variables.$orange-color;
     margin-right: auto;
     font-size: 1.2rem;
 }
@@ -42,7 +44,7 @@ nav {
 
 @keyframes hoverWhite {
     from {
-        color: #ff9000;
+        color: variables.$orange-color;
     }
 
     to {
@@ -56,7 +58,7 @@ nav {
     }
 
     to {
-        color: #ff9000;
+        color: variables.$orange-color;
     }
 }
 
