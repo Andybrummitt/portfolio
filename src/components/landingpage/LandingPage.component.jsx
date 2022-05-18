@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./landingpage.styles.scss";
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../button/Button.component";
 
 const LandingPage = () => {
 
@@ -12,8 +11,8 @@ const LandingPage = () => {
       introName.childNodes[i].style.animationDelay = `${i * 0.2}s`;
     }
     introName.onanimationend = () => {
-      const introTitle = document.querySelector('.cta-button');
-      introTitle.classList.add('cta-button-animation');
+      const ctaButton = document.querySelector('.aboutme-btn');
+      ctaButton.classList.add('cta-button-animation');
     }
   }
   
@@ -42,7 +41,7 @@ const LandingPage = () => {
           <span className="orange-bold">d</span>
           <span className="orange-bold">y</span>
         </p>
-        <button className="cta-button"><span>About Me</span><a href="#"><FontAwesomeIcon icon={faArrowRight} /></a></button>
+        <Button innerText="About Me" path="aboutme" btnClass="aboutme-btn" />
         </div>
         <div className="lower-container">
           <span>Web Developer</span>

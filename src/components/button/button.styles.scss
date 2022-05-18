@@ -1,0 +1,33 @@
+.link-button {
+    border: 0.1rem solid white;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    background: transparent;
+    cursor: pointer;
+    a {
+        color: white;
+        font-size: 1rem;
+    }
+    span {
+        margin-right: 0.5rem;
+    }
+}
+
+.cta-button-animation {
+    animation: ctaButtonAppear 2s forwards;
+}
+
+@keyframes ctaButtonAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

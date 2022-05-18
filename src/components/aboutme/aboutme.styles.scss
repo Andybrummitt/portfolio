@@ -7,13 +7,12 @@
 
 .title-container {
     height: 75px;
-    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
     background: variables.$bg-color;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    border: 0.1rem solid white;
 }
 
 .sections-container {
