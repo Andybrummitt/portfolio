@@ -1,11 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import css from "../../images/logo-images/css.png";
+// get firebase
 import "./canvas.styles.scss";
 
 const Canvas = () => {
-  const width = "100";
-  const height = "100";
-  let ctx;
+  const [logos, setLogos] = useState([]);
+  const [ctx, setCtx] = useState("");
+  const [canvas, setCanvas] = useState("");
+  const width = window.innerWidth;
+  const height = window.innerHeight;
 
   const createCanvas = () => {
     const canvas = document.querySelector(".canvas");
@@ -24,39 +27,74 @@ const Canvas = () => {
       this.logo = logo;
     }
     draw() {
-      ctx.drawImage(this.logo, this.size, this.size);
+      console.log(ctx);
+      ctx.drawImage(this.logo, this.x, this.y, this.size, this.size);
     }
     updatePosition() {
-      if (this.x + this.size >= width || this.x - this.size <= 0) {
+      if (this.x + this.size >= width || this.x - this.size <= 0 - this.size) {
         this.velocityX = -this.velocityX;
       }
-      if (this.y + this.size >= height || this.y - this.size <= 0) {
+      if (this.y + this.size >= height || this.y - this.size <= 0 - this.size) {
         this.velocityY = -this.velocityY;
       }
-
       this.x += this.velocityX;
       this.y += this.velocityY;
     }
   }
 
+  const random = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  const createLogo = (imgObj, image) => {
+    imgObj.src = image;
+    const size = 50;
+    return new Logo(
+      random(size, width - size),
+      random(size, height - size),
+      2,
+      2,
+      size,
+      imgObj
+    );
+  };
+
   useEffect(() => {
-    const image = new Image();
-    image.src = css;
-    const canvas = createCanvas();
-    ctx = canvas.getContext("2d");
-    const logo = new Logo(50, 50, 5, 5, 20, image);
+    console.log(ctx);
+  }, [ctx]);
 
-    // const loopAnimation = () => {
-    //   logo.draw();
-    //   logo.updatePosition();
+  useEffect(() => {
+    if (canvas) {
+      setCtx(canvas.getContext("2d"));
+      const images = [css];
 
-    //   requestAnimationFrame(loopAnimation);
-    // };
+      images.forEach((image) => {
+        let imgObj = new Image();
+        const logo = createLogo(imgObj, image);
+        imgObj.onload = () => setLogos((prevState) => [...prevState, logo]);
+      });
+    }
+  }, [canvas]);
 
-    // loopAnimation();
+  useEffect(() => {
+    setCanvas(createCanvas());
   }, []);
 
-  const logos = [];
+  useEffect(() => {
+    //  IF LOGOS ARE ALL LOADED
+    if (logos.length !== 1 && !ctx) return;
+    console.log(ctx);
+    const loopAnimation = () => {
+      logos.forEach((logo) => {
+        console.log(logo);
+        ctx.fillRect(0, 0, width, height);
+        logo.draw();
+        logo.updatePosition();
+        requestAnimationFrame(loopAnimation);
+      });
+    };
+    loopAnimation();
+  }, [logos]);
 
   //
 

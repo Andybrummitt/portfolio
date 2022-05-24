@@ -23,7 +23,7 @@ const AboutMe = () => {
             <section className="intro-section">
                 <p>I'm an Essex-based aspiring developer who has been coding for the past 2 years.</p>
                 <br/>
-                <p>I'm currently looking for work in the software development industry. See my <a href="https://uk.linkedin.com/in/andy-brummitt-b4604847"> LinkedIn</a> for more details</p>
+                <p>I'm currently looking for work in the software development industry. See my <a href="https://uk.linkedin.com/in/andy-brummitt-b4604847"> LinkedIn</a> for more details.</p>
             </section>
             <section className="skills-graphic">
             <Button innerText="See My Work" path="portfolio" btnClass="portfolio-btn" />
@@ -31,14 +31,14 @@ const AboutMe = () => {
             <section className="skills-section">
                 <h3>My Skills</h3>
                 <ul>
-                    <li>HTML <StarRating /></li>
-                    <li>CSS, SCSS <StarRating /></li>
-                    <li>Javascript <StarRating /></li>
-                    <li>React <StarRating /></li>
-                    <li>Node (Express) <StarRating /></li>
-                    <li>Git <StarRating /></li>
-                    <li>Firebase <StarRating /></li>
-                    <li>Webpack <StarRating /></li>
+                    <li>HTML <StarRating delay={0.5} stars={8} /></li>
+                    <li>CSS, SCSS <StarRating delay={1} stars={7} /></li>
+                    <li>Javascript <StarRating delay={1.5} stars={7} /></li>
+                    <li>React <StarRating delay={2} stars={6} /></li>
+                    <li>Git <StarRating delay={2.5} stars={6} /></li>
+                    <li>Node, Express <StarRating delay={3} stars={5} /></li>
+                    <li>Firebase <StarRating delay={3.5} stars={4} /></li>
+                    <li>Webpack <StarRating delay={4} stars={4} /></li>
                 </ul>
             </section>
         </div>

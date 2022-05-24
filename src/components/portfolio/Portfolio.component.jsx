@@ -5,8 +5,7 @@ import "./portfolio.styles.scss";
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-      Portfolio
-      <Canvas />
+      {/* <Canvas /> */}
     </div>
   );
 };
