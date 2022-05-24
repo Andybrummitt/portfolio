@@ -1,4 +1,9 @@
+@use "../../styles/variables";
+
 .portfolio-container {
     height: 100vh;
+    width: 100vw;
     position: relative;
+    background: variables.$dark-bg-color;
 }
+

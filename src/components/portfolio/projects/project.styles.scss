@@ -1,0 +1,39 @@
+.project-container {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 0.5rem;
+
+    .project-title {
+        text-align: center;
+        margin: 0.3rem;
+    }
+
+    .about-project {
+        margin: 0.3rem 0;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
+        .arrow-left {
+            left: -3%;
+        }
+        .arrow-right {
+            right: -3%;
+        }
+        
+    }
+}
