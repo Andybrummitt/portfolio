@@ -2,12 +2,11 @@
 
 .about-me-container {
     height: 100vh;
-    background: variables.$orange-color;
+    background: variables.$dark-bg-color;
 }
 
 .title-container {
     height: 75px;
-    border-bottom-left-radius: 5rem;
     background: variables.$bg-color;
     display: flex;
     justify-content: center;
@@ -72,44 +71,44 @@
 .animate-4-stars {
     
     svg:nth-child(1) { 
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
     svg:nth-child(2) {  
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
     svg:nth-child(3) {
-        animation: colorStar 1s forwards;
+        animation: colorStar 0.5s forwards;
     }
     svg:nth-child(4) { 
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
 }
 
 .animate-5-stars {
     @extend .animate-4-stars;
     svg:nth-child(5) {  
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
 }
 
 .animate-6-stars {
     @extend .animate-5-stars;
     svg:nth-child(6) {  
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
 }
 
 .animate-7-stars {
     @extend .animate-6-stars;
     svg:nth-child(7) {  
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
 }
 
 .animate-8-stars {
     @extend .animate-7-stars;
     svg:nth-child(8) {  
-        animation: colorStar 1s forwards;  
+        animation: colorStar 0.5s forwards;  
     }
 }
 
@@ -118,7 +117,7 @@
         color: rgb(0, 0, 0, 0.1);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1.15);
         color: #E0AA3E;
     }
 }

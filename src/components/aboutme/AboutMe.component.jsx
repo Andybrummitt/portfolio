@@ -1,16 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Button from '../button/Button.component';
 import "./aboutme.styles.scss"
 import StarRating from './StarRating.component';
 
 const AboutMe = () => {
 
+    const myRef = useRef();
+    const [ buttonVisible, setButtonVisible ] = useState(false);
+  
     useEffect(() => {
+      //  DETECT WHEN USER SCROLLS TO COMPONENT AND SET STATE TO VISIBLE
+      const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setButtonVisible(entry.isIntersecting)
+      })
+      observer.observe(myRef.current)
+    }, []);
+  
+
+    useEffect(() => {
+        if(!buttonVisible) return;
         //when scrolled into view
-        // const ctaButton = document.querySelector('.portfolio-button');
-        // console.log(ctaButton)
-        // ctaButton.classList.add('cta-button-animation');
-    }, [])
+        const button = document.querySelector('.portfolio-btn');
+        console.log(button)
+        button.classList.add('cta-button-animation');
+        button.classList.add('cta-button-orange');
+    }, [buttonVisible])
   
 
 
@@ -25,10 +40,8 @@ const AboutMe = () => {
                 <br/>
                 <p>I'm currently looking for work in the software development industry. See my <a href="https://uk.linkedin.com/in/andy-brummitt-b4604847"> LinkedIn</a> for more details.</p>
             </section>
-            <section className="skills-graphic">
             <Button innerText="See My Work" path="portfolio" btnClass="portfolio-btn" />
-            </section>
-            <section className="skills-section">
+            <section ref={myRef} className="skills-section">
                 <h3>My Skills</h3>
                 <ul>
                     <li>HTML <StarRating delay={0.5} stars={8} /></li>
