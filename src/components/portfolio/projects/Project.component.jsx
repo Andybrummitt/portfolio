@@ -6,10 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./project.styles.scss";
 
-const Project = ({ image, about, showLeft, showRight }) => {
+const Project = ({ info, showLeft, showRight }) => {
+
+  const { image, title, about, website, github } = info;
+
   return (
     <div className="project-container">
-      <h3 className="project-title">Project title</h3>
+      <h3 className="project-title">{title}</h3>
       <section className="image-container">
         <span>
           <FontAwesomeIcon onClick={showLeft} className="arrow-left" icon={faCircleArrowLeft} />
@@ -21,11 +24,12 @@ const Project = ({ image, about, showLeft, showRight }) => {
       </section>
       <section className="about-project">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-          voluptatem ducimus repellat distinctio? Earum iste quasi laborum est
-          nemo vero labore asperiores, eos expedita obcaecati temporibus quo
-          perspiciatis facilis magni!
+          {about}
         </p>
+        <div className="project-links-container">
+          <p className="website"><button className="website-btn"><a href={website}>See Website</a></button></p>
+          <p className="github"><button className="github-btn"><a href={github}>See Github</a></button></p>
+        </div>
       </section>
     </div>
   );
