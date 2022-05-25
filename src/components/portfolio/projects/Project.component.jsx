@@ -27,8 +27,8 @@ const Project = ({ info, showLeft, showRight }) => {
           {about}
         </p>
         <div className="project-links-container">
-          <p className="website"><button className="website-btn"><a href={website}>See Website</a></button></p>
-          <p className="github"><button className="github-btn"><a href={github}>See Github</a></button></p>
+          <button className="website-btn"><a href={website}>See Website</a></button>
+          <button className="github-btn"><a href={github}>See Github</a></button>
         </div>
       </section>
     </div>

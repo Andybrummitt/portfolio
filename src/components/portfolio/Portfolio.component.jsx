@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
+import PageTitle from "../pagetitle/PageTitle.component";
 import "./portfolio.styles.scss";
 import Project from "./projects/Project.component";
 import projectsObj from "./projects/projectsObj";
@@ -29,9 +30,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-container" id="portfolio">
-      <div className="title-container">
-        <h1>Portfolio</h1>
-      </div>
+      <PageTitle text={'Portfolio'} />
       <div className="projects-carousel-container">
         {projectsObj
           .filter((project) => project.key === projectKey)

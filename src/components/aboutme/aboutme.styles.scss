@@ -5,15 +5,6 @@
     background: variables.$dark-bg-color;
 }
 
-.title-container {
-    height: 75px;
-    background: variables.$bg-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
 .sections-container {
     display: flex;
     flex-direction: column;
@@ -21,6 +12,14 @@
     height: 550px;
     padding: 0.5rem;
     margin: 1rem auto;
+    overflow: hidden;
+
+    .animation-ref-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
 
     section {
         margin: 1rem;

@@ -1,0 +1,11 @@
+@use "../../styles/variables";
+
+.title-container {
+    height: 75px;
+    background: variables.$bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}

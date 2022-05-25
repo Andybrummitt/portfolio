@@ -29,6 +29,10 @@
     background: variables.$orange-color;
 }
 
+.portfolio-btn {
+    opacity: 1;
+}
+
 @keyframes ctaButtonAppear {
     0% {
         opacity: 0;

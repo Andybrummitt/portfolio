@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
+import PageTitle from "../pagetitle/PageTitle.component";
 import "./contact.styles.scss";
 
 const Contact = () => {
+
   const formVariants = {
     hidden: { scale: 0 },
     visible: {
@@ -31,9 +33,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page-container">
-      <div className="title-container">
-        <h1>Contact</h1>
-      </div>
+      <PageTitle text={'Contact'} />
       <motion.form
         action=""
         className="contact-form"
