@@ -1,0 +1,23 @@
+@use "../../styles/variables";
+
+.contact-page-container {
+    background: variables.$dark-bg-color;
+    height: 90vh;
+
+    form {
+        width: 90%;
+        margin: 1rem auto;
+        background: variables.$orange-color;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+
+        input, textarea {
+            margin: 0.5rem 0;
+            padding: 0.25rem;
+            width: 100%;
+            border-radius: 0.125rem;
+            border: none;
+        }
+    }
+}

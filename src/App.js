@@ -1,17 +1,20 @@
-import './App.css';
-import Navbar from './components/navbar/Navbar.component';
-import LandingPage from './components/landingpage/LandingPage.component';
-import AboutMe from './components/aboutme/AboutMe.component';
-import Portfolio from './components/portfolio/Portfolio.component';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Contact from "./components/contact/Contact.component";
+import Home from "./components/home/Home.component";
+import Navbar from "./components/navbar/Navbar.component";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <LandingPage />
-      <AboutMe />
-      <Portfolio />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

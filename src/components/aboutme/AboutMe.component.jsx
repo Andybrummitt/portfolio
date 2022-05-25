@@ -22,7 +22,6 @@ const AboutMe = () => {
         if(!buttonVisible) return;
         //when scrolled into view
         const button = document.querySelector('.portfolio-btn');
-        console.log(button)
         button.classList.add('cta-button-animation');
         button.classList.add('cta-button-orange');
     }, [buttonVisible])

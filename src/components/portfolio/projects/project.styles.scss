@@ -1,3 +1,5 @@
+@use "../../../styles/variables";
+
 .project-container {
     width: 95%;
     margin: 2rem auto;
@@ -26,7 +28,9 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 1.5rem;
+            font-size: 2rem;
+            filter: drop-shadow(0 0 1px black);
+            color: variables.$orange-color;
         }
         .arrow-left {
             left: -3%;

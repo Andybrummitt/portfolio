@@ -5,19 +5,25 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import "./navbar.styles.scss";
 
+import {
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="main-nav">
         <div className="home-link">
-            <a href="#" className="home-link">
+            <Link to="/" className="home-link">
                 <FontAwesomeIcon icon={faHouse} />
-            </a>
+            </Link>
         </div>
         <ul className="info-links">
-            <li><a href="">
+            <li><a href="https://uk.linkedin.com/in/andy-brummitt-b4604847">
             <FontAwesomeIcon icon={faLinkedin} />
             </a></li>
-            <li><a href="">
+            <li><a href="https://github.com/Andybrummitt?tab=repositories">
             <FontAwesomeIcon icon={faGithub} />
             </a></li>
         </ul>
