@@ -1,7 +1,7 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import PageTitle from "../pagetitle/PageTitle.component";
@@ -11,10 +11,8 @@ import projectsObj from "./projects/projectsObj";
 
 const Portfolio = () => {
   const [projectKey, setProjectKey] = useState(1);
-  const [ direction, setDirection ] = useState(null);
 
   const showLeft = () => {
-    setDirection('left');
     setProjectKey((prevKey) => {
       if (prevKey === 1) {
         return 5;
@@ -23,7 +21,6 @@ const Portfolio = () => {
   };
 
   const showRight = () => {
-    setDirection('right')
     setProjectKey((prevKey) => {
       if (prevKey === 5) {
         return 1;
@@ -35,10 +32,7 @@ const Portfolio = () => {
     <div className="portfolio-container" id="portfolio">
       <PageTitle text={"Portfolio"} />
       <div className="projects-carousel-container">
-        <AnimatePresence
-          exitBeforeEnter
-          initial={false}
-        >
+        <AnimatePresence exitBeforeEnter initial={false}>
           {projectsObj
             .filter((project) => project.key === projectKey)
             .map((project) => (
@@ -47,17 +41,16 @@ const Portfolio = () => {
                 info={project}
                 showLeft={showLeft}
                 showRight={showRight}
-                direction={direction}
               />
             ))}
         </AnimatePresence>
       </div>
-      <Link to="/contact">
-        <button>
-          Contact
+      <button className="contact-link-btn">
+        <Link to="/contact">
+          <span>Contact</span>
           <FontAwesomeIcon icon={faEnvelope} />
-        </button>
-      </Link>
+        </Link>
+      </button>
     </div>
   );
 };

@@ -24,7 +24,7 @@ const PortfolioLinkButton = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 2,
+        delay: 4,
         duration: 1,
       },
     },

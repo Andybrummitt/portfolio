@@ -9,3 +9,10 @@
     color: white;
     overflow: hidden;
 }
+
+@media screen and (min-width: 1024px) {
+    .title-container {
+        font-size: 1.5rem;
+    }
+    
+}

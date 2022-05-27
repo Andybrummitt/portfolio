@@ -65,3 +65,9 @@
         opacity: 1;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .link-button a, .link-button svg {
+        font-size: 1.8rem;
+    }
+}

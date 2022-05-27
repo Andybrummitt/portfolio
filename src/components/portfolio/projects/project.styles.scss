@@ -2,11 +2,11 @@
 
 .project-container {
     width: 95%;
-    height: 60vh;
+    background: white;
+    height: auto;
     overflow: hidden;
     margin: 2rem auto;
     padding: 0.5rem;
-    background: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 0.5rem;
     max-width: 900px;
@@ -45,13 +45,14 @@
 
     .project-links-container {
         display: flex;
-        margin: 1rem 0;
-        justify-content: space-around;
+        margin: 1.5rem 0;
+        justify-content: center;
         
         button {
             padding: 0.75rem;
             border-radius: 0.25rem;
-            border: none;      
+            border: none;   
+            margin: 0 1rem;   
             a {
                 text-decoration: none;
                 color: white;
@@ -63,5 +64,37 @@
         .github-btn {
             background: #07cbf2;
         }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .project-container {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project-container {
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        .project-title {
+            margin: 0.8rem;
+        }
+
+        span svg {
+            font-size: 3rem;
+        }
+
+        button {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-height: 850px){
+    .project-container {
+        padding: 1rem;
+        font-size: 1.5rem;
     }
 }

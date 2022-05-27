@@ -118,11 +118,8 @@
     }
 }
 
-//exit animation {
-    // 95% {
-    //     transform: rotate(-180deg);
-    // }
-    // 100% {
-    //     transform: translateY(-300px);
-    // }
-// }
+@media screen and (min-width: 1024px) {
+    .intro-name-span {
+        font-size: 3rem;
+    }
+}
