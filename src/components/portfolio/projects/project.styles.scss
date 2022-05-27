@@ -2,11 +2,15 @@
 
 .project-container {
     width: 95%;
+    height: 60vh;
+    overflow: hidden;
     margin: 2rem auto;
     padding: 0.5rem;
     background: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 0.5rem;
+    max-width: 900px;
+    position: relative;
 
     .project-title {
         text-align: center;
@@ -18,26 +22,25 @@
     }
 
     .image-container {
-        position: relative;
         width: 100%;
         img {
             width: 100%;
             height: auto;
         }
-        svg {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 2rem;
-            filter: drop-shadow(0 0 1px black);
-            color: variables.$orange-color;
-        }
-        .arrow-left {
-            left: -3%;
-        }
-        .arrow-right {
-            right: -3%;
-        }
+    }
+
+    svg {
+        position: absolute;
+        top: 1%;
+        font-size: 2rem;
+        color: variables.$orange-color;
+        cursor: pointer;
+    }
+    .arrow-left {
+        left: 3%;
+    }
+    .arrow-right {
+        right: 3%;
     }
 
     .project-links-container {
