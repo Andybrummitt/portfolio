@@ -31,26 +31,28 @@ const Portfolio = () => {
   return (
     <div className="portfolio-container" id="portfolio">
       <PageTitle text={"Portfolio"} />
-      <div className="projects-carousel-container">
-        <AnimatePresence exitBeforeEnter initial={false}>
-          {projectsObj
-            .filter((project) => project.key === projectKey)
-            .map((project) => (
-              <Project
-                key={uuidv4()}
-                info={project}
-                showLeft={showLeft}
-                showRight={showRight}
-              />
-            ))}
-        </AnimatePresence>
+      <div className="portfolio-content-container">
+        <div className="projects-carousel-container">
+          <AnimatePresence exitBeforeEnter initial={false}>
+            {projectsObj
+              .filter((project) => project.key === projectKey)
+              .map((project) => (
+                <Project
+                  key={uuidv4()}
+                  info={project}
+                  showLeft={showLeft}
+                  showRight={showRight}
+                />
+              ))}
+          </AnimatePresence>
+        </div>
+        <button className="contact-link-btn">
+          <Link to="/contact">
+            <span>Contact</span>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </Link>
+        </button>
       </div>
-      <button className="contact-link-btn">
-        <Link to="/contact">
-          <span>Contact</span>
-          <FontAwesomeIcon icon={faEnvelope} />
-        </Link>
-      </button>
     </div>
   );
 };

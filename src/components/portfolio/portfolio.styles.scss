@@ -3,14 +3,26 @@
 .portfolio-container {
     min-height: 100vh;
     height: fit-content;
-    width: 100vw;
     position: relative;
-    background: variables.$dark-bg-color;
     overflow: hidden;
+    background: variables.$dark-bg-color;
+}
+
+.portfolio-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 75px);
+    padding: 0.5rem;
+    overflow: hidden;
+    background: url("../../images/top-layered-waves-haikei.svg"), url("../../images/layered-waves-haikei.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100% auto;
+    background-position: 0 0, bottom;
 }
 
 .contact-link-btn {
-    margin: 2rem auto;
+    margin: 0rem auto;
     padding: 0.8rem;
     display: flex;
     align-items: center;
@@ -29,9 +41,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .contact-link-btn {
-        position: absolute;
-        top: 8%;
-        left: 1%;
+
+    .portfolio-content-container {
+        background-size: 100% 60%, 100% 60%;
     }
+
 }

@@ -6,11 +6,11 @@ import "./button.styles.scss";
 
 const Button = ({ innerText, path, btnClass }) => {
   return (
-    <button className={`link-button ${btnClass ? btnClass : ''}`}>
+    <button className={`link-button ${btnClass ? btnClass : ""}`}>
       <Link to={path} spy={true} smooth={true} offset={0} duration={500}>
         <span>{innerText}</span>
+        <FontAwesomeIcon icon={faArrowRight} />
       </Link>
-      <FontAwesomeIcon icon={faArrowRight} />
     </button>
   );
 };

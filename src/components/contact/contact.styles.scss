@@ -4,8 +4,24 @@
     background: variables.$dark-bg-color;
     height: 90vh;
 
+    .title-container {
+        border-top: 0.1rem solid white;
+    }
+
+
+    .contact-content-container {
+        height: calc(100% - 75px);
+        padding: 0.5rem;
+        overflow: hidden;
+        background: url("../../images/layered-waves-haikei.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: bottom;
+    }
+
     form {
         width: 90%;
+        max-width: 500px;
         margin: 1rem auto;
         background: variables.$orange-color;
         padding: 0.5rem;

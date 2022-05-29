@@ -7,10 +7,8 @@ import "./canvas.styles.scss";
 
 const Canvas = () => {
   const [logos, setLogos] = useState([]);
-
+  const [ ctx, setCtx ] = useState(null);
   const canvasRef = useRef(null);
-
-  let ctx;
   let canvas;
   const width = window.innerWidth;
   const height = window.innerHeight;
@@ -41,7 +39,6 @@ const Canvas = () => {
       if (this.y + this.size >= height || this.y - this.size <= 0 - this.size) {
         this.velocityY = -this.velocityY;
       }
-      console.log(this.x)
       this.x += this.velocityX;
       this.y += this.velocityY;
     }
@@ -60,26 +57,31 @@ const Canvas = () => {
       2,
       2,
       size,
-      imgObj
+      imgObj, 
     );
   };
 
   useEffect(() => {
     canvas = createCanvas();
-    ctx = canvasRef.current.getContext("2d");
-    const images = [css, git];
+    setCtx(canvasRef.current.getContext("2d"));
 
+
+  }, []);
+
+  useEffect(() => {
+    if(!ctx) return;
+    const images = [css];
     images.forEach((image) => {
       let imgObj = new Image();
       const logo = createLogo(imgObj, image);
       imgObj.onload = () => setLogos((prevState) => [...prevState, logo]);
     });
-  }, [canvas]);
+  }, [ctx])
 
   useEffect(() => {
     //  IF LOGOS ARE ALL LOADED
-    if (logos.length !== 8) return;
-    ctx = canvasRef.current.getContext('2d');
+    if (logos.length !== 1) return;
+    // ctx = canvasRef.current.getContext('2d');
     const loopAnimation = () => {
       ctx.fillRect(0, 0, width, height);
       logos.forEach((logo) => {

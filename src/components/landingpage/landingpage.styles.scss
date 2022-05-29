@@ -1,8 +1,17 @@
 @use "../../styles/variables";
 
 .page-container {
-    background: variables.$bg-color;
+    background: variables.$dark-bg-color;
     height: 90vh;
+    position: relative;
+}
+
+.content-container {
+    height: calc(100% - 150px);
+    background: url("../../images/layered-waves-haikei.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
 }
 
 .upper-container {
@@ -41,7 +50,6 @@
 
 .lower-container {
     @extend .upper-container;
-    border-top-left-radius: 10rem;
     border-bottom-right-radius: 0;
     span {
         animation-delay: 1s;
@@ -121,5 +129,8 @@
 @media screen and (min-width: 1024px) {
     .intro-name-span {
         font-size: 3rem;
+    }
+    .content-container {
+        background-size: 100% 90%;
     }
 }

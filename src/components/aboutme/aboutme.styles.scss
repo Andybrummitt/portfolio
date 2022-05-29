@@ -9,10 +9,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: calc(100vh - 75px);
     padding: 0.5rem;
-    margin: 1rem auto;
     overflow: hidden;
+    background: url("../../images/top-layered-waves-haikei.svg"), url("../../images/layered-waves-haikei.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100% auto;
+    background-position: 0 0, bottom;
+
 
     .animation-ref-container {
         display: flex;
@@ -30,8 +34,7 @@
     .intro-section {
         padding: 1rem;
         width: 100%;
-        background: variables.$bg-color;
-        color: white;
+        background: white;
         border-radius: 1rem;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         a {
@@ -99,6 +102,12 @@
         font-size: 1.2rem;
         width: 70%;
         padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .sections-container {
+        background-size: 100% 60%, 100% 60%;
     }
 }
 

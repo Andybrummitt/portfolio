@@ -4,7 +4,6 @@ import PageTitle from "../pagetitle/PageTitle.component";
 import "./contact.styles.scss";
 
 const Contact = () => {
-
   const formVariants = {
     hidden: { scale: 0 },
     visible: {
@@ -33,36 +32,38 @@ const Contact = () => {
 
   return (
     <div className="contact-page-container">
-      <PageTitle text={'Contact'} />
-      <motion.form
-        action=""
-        className="contact-form"
-        method="POST"
-        initial="hidden"
-        animate="visible"
-        variants={formVariants}
-      >
-        <motion.input
-          variants={childVariants}
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-        />
-        <motion.input
-          variants={childVariants}
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
-        <motion.textarea
-          variants={childVariants}
-          placeholder="Message"
-          rows={6}
-          required
-        />
-      </motion.form>
+      <PageTitle text={"Contact"} />
+      <div className="contact-content-container">
+        <motion.form
+          action=""
+          className="contact-form"
+          method="POST"
+          initial="hidden"
+          animate="visible"
+          variants={formVariants}
+        >
+          <motion.input
+            variants={childVariants}
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <motion.input
+            variants={childVariants}
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <motion.textarea
+            variants={childVariants}
+            placeholder="Message"
+            rows={6}
+            required
+          />
+        </motion.form>
+      </div>
     </div>
   );
 };

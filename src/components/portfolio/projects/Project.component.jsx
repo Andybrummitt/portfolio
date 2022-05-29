@@ -26,9 +26,12 @@ const Project = ({ info, showLeft, showRight }) => {
           icon={faCircleArrowRight}
         />
       </span>
-      <motion.div key={title} className="inner-container" initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 0.2 } }}
-         >
+      <motion.div
+        key={title}
+        className="inner-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.2 } }}
+      >
         <motion.h3
           className="project-title"
           initial={{ y: -200 }}
@@ -71,9 +74,11 @@ const Project = ({ info, showLeft, showRight }) => {
               transition: { duration: 0.3 },
             }}
           >
-            <button className="website-btn">
-              <a href={website}>See Website</a>
-            </button>
+            {website ? (
+              <button className="website-btn">
+                <a href={website}>See Website</a>
+              </button>
+            ) : null}
             <button className="github-btn">
               <a href={github}>See Github</a>
             </button>
