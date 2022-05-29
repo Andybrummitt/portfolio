@@ -2,7 +2,7 @@
 
 .project-container {
     width: 95%;
-    background: white;
+    background: rgb(255, 255, 255, 0.88);
     height: auto;
     overflow: hidden;
     margin: 2rem auto;
@@ -65,10 +65,10 @@
             }
         }
         .website-btn {
-            background: #5fd453;
+            background: variables.$orange-color;
         }
         .github-btn {
-            background: #07cbf2;
+            background: variables.$red-svg-color;
         }
     }
 }

@@ -29,12 +29,12 @@
     section {
         margin: 1rem;
         max-width: 600px;
+        background: rgb(255, 255, 255, 0.88);
     }
 
     .intro-section {
         padding: 1rem;
         width: 100%;
-        background: white;
         border-radius: 1rem;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         a {
@@ -45,7 +45,6 @@
     .skills-section {
         padding: 0.5rem;
         width: 100%;
-        background: white;
         border-radius: 1rem;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         h3 {

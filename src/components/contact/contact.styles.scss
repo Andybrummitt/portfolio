@@ -6,6 +6,7 @@
 
     .title-container {
         border-top: 0.1rem solid white;
+        border-bottom: 0.1rem solid white;
     }
 
 
@@ -22,12 +23,12 @@
     form {
         width: 90%;
         max-width: 500px;
-        margin: 1rem auto;
+        margin: 5rem auto;
         background: variables.$orange-color;
         padding: 0.5rem;
         border-radius: 0.5rem;
         overflow: hidden;
-
+        
         input, textarea {
             margin: 0.5rem 0;
             padding: 0.25rem;
@@ -36,4 +37,22 @@
             border: none;
         }
     }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contact-page-container {
+    form input, form textarea {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }   
+}
+
+.contact-page-container {
+
+.contact-content-container {
+    background-size: 100% 80%;
+}
+
+}
 }

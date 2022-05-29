@@ -15,9 +15,10 @@
 }
 
 .upper-container {
-    background: variables.$orange-color;
-    height: 75px;
-    border-bottom-right-radius: 10rem;  
+    background: transparent;
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
+    height: 75px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,9 +86,6 @@
 
 .intro-title {
     font-size: 2.5rem;
-}
-
-@keyframes introTitleAnimation {
 }
 
 .intro-name-span {
