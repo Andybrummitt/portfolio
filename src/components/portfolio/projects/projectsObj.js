@@ -9,7 +9,7 @@ const projectsObj = [
     {
         key: 1,
         title: 'Mixin',
-        about: 'A cocktail information app utilising cocktailDB API. Built with HTML, CSS, JS and React on the front end and Node Express on the backend. Bundled with Webpack and hosted on Heroku.',
+        about: 'A cocktail information app utilising the cocktailDB API. Built with HTML, CSS, JS and React on the front end and Node Express on the backend. Bundled with Webpack and hosted on Heroku.',
         website: 'http://mixinapp.herokuapp.com/',
         github: 'https://github.com/Andybrummitt/cocktailapp',
         image: mixin
@@ -41,7 +41,7 @@ const projectsObj = [
     {
         key: 5,
         title: 'Movie API App',
-        about: 'This was my first time working with react and APIs. I built the front end for a movie application utilising movieDB api.',
+        about: 'This was my first time working with react and APIs. The front end is built with HTML, CSS, JS and react as well as utilising the movieDB api.',
         github: 'https://github.com/Andybrummitt/movieapiapp',
         website: null,
         image: movieapp
