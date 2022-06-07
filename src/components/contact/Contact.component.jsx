@@ -45,21 +45,18 @@ const buttonVariants = {
 };
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const [ name, setName ] = useState('');
-  const [ email, setEmail ] = useState('');
-  const [ message, setMessage ] = useState('');
-
-  const handleSubmit = () => {
-
-  }
+  const handleSubmit = () => {};
 
   return (
     <div className="contact-page-container">
       <PageTitle text={"Contact"} />
       <div className="contact-content-container">
         <motion.form
-          name="contact"
+          name="contact-form"
           data-netlify="true"
           className="contact-form"
           method="POST"
@@ -67,20 +64,22 @@ const Contact = () => {
           animate="visible"
           variants={formVariants}
         >
-        <input type="hidden" name="form-name" value="contact"/>
+          <input type="hidden" name="form-name" value="contact-form" />
           <motion.input
             variants={childVariants}
             type="text"
             name="name"
             placeholder="Name"
-            value={name} onChange={(e) => setName(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             required
           />
           <motion.input
             variants={childVariants}
             type="email"
             name="email"
-            value={email} onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             required
           />
@@ -88,7 +87,8 @@ const Contact = () => {
             variants={childVariants}
             placeholder="Message"
             name="message"
-            value={message} onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             rows={6}
             required
           />
