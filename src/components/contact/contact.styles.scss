@@ -29,12 +29,18 @@
         border-radius: 0.5rem;
         overflow: hidden;
         
-        input, textarea {
+        input, textarea, button {
             margin: 0.5rem 0;
             padding: 0.25rem;
             width: 100%;
             border-radius: 0.125rem;
             border: none;
+        }
+
+        button {
+            color: white;
+            background: variables.$dark-bg-color;
+            cursor: pointer;
         }
     }
 }
@@ -42,7 +48,7 @@
 @media screen and (min-width: 1024px) {
 
     .contact-page-container {
-    form input, form textarea {
+    form input, form textarea, form button {
         font-size: 1.3rem;
         padding: 0.5rem;
     }   
