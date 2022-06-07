@@ -35,7 +35,9 @@ const Contact = () => {
       <PageTitle text={"Contact"} />
       <div className="contact-content-container">
         <motion.form
-          action=""
+          name="contact"
+          onSubmit="submit"
+          data-netlify="true"
           className="contact-form"
           method="POST"
           initial="hidden"
@@ -59,6 +61,7 @@ const Contact = () => {
           <motion.textarea
             variants={childVariants}
             placeholder="Message"
+            name="message"
             rows={6}
             required
           />
