@@ -2,8 +2,6 @@
 
 .portfolio-container {
     position: relative;
-    overflow: auto;
-    min-height: fit-content;
     height: 100vh;
     background: variables.$dark-bg-color;
 }
