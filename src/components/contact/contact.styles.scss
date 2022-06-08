@@ -12,6 +12,7 @@
 
     .contact-content-container {
         height: calc(100% - 75px);
+        min-height: fit-content;
         padding: 0.5rem;
         overflow: hidden;
         background: url("../../images/layered-waves-haikei.svg");

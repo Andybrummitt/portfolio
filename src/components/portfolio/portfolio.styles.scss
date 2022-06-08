@@ -2,7 +2,8 @@
 
 .portfolio-container {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+    min-height: fit-content;
     height: 100vh;
     background: variables.$dark-bg-color;
 }
@@ -11,10 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100% - 150px);
-    height: fit-content;
+    height: calc(100% - 75px);
+    min-height: fit-content;
     padding: 0.5rem;
-    overflow: hidden;
     background: url("../../images/top-layered-waves-haikei.svg"), url("../../images/layered-waves-haikei.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto, 100% auto;
