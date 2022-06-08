@@ -2,8 +2,8 @@
 
 .portfolio-container {
     position: relative;
-    min-height: 100vh;
-    background: variables.$red-svg-color;
+    height: 100vh;
+    background: variables.$dark-bg-color;
 }
 
 .portfolio-content-container {
@@ -42,6 +42,12 @@
 .contact-link-btn:hover {
     transform: scale(1.2);
     transition: 0.5s all ease;
+}
+
+@media screen and (max-height: 600px){
+    .portfolio-container {
+        height: 750px;
+    }
 }
 
 @media screen and (min-width: 768px) {
