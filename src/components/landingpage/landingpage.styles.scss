@@ -7,7 +7,8 @@
 }
 
 .content-container {
-    height: calc(100% - 150px);
+    min-height: calc(100% - 150px);
+    height: fit-content;
     background: url("../../images/layered-waves-haikei.svg");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -16,17 +17,16 @@
 
 .upper-container {
     background: transparent;
-    border-top: 0.1rem solid variables.$orange-color;
+    border-top: 0.1rem solid white;
+    border-bottom: 0.1rem solid white;
     height: 75px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     overflow: hidden;
     color: white;
-    -webkit-text-stroke: 0.05rem white;
-    -webkit-text-fill-color: transparent;
     white-space: nowrap;
     span {
         transform: translateX(-100%);
@@ -34,6 +34,7 @@
         animation-duration: 8s;
         animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
         animation-iteration-count: infinite;
+        font-family: variables.$banner-font;
     }
 }
 
@@ -50,8 +51,6 @@
 
 .lower-container {
     @extend .upper-container;
-    border-top: none;
-    border-bottom: 0.1rem solid variables.$orange-color;
     border-bottom-right-radius: 0;
     span {
         animation-delay: 1s;
@@ -126,6 +125,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .upper-container {
+        font-size: 3.5rem;
+    }
 
     .intro-name-span {
         font-size: 2.5rem;

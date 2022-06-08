@@ -9,7 +9,7 @@ const projectsObj = [
     {
         key: 1,
         title: 'Mixin',
-        about: 'A cocktail information app utilising the cocktailDB API. Built with HTML, CSS, JS and React on the front end and Node Express on the backend. Bundled with Webpack and hosted on Heroku.',
+        about: 'A cocktail information app utilising the cocktailDB API. A SPA built with HTML, CSS and vanilla JS on the front end and Node Express on the backend. Bundled with Webpack and hosted on Heroku.',
         website: 'http://mixinapp.herokuapp.com/',
         github: 'https://github.com/Andybrummitt/cocktailapp',
         image: mixin

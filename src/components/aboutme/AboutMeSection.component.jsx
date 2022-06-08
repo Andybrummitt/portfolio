@@ -33,7 +33,7 @@ const AboutMeSection = () => {
       <motion.section className="intro-section" animate={controls}>
         <p>
           I'm an Essex-based aspiring developer who has been coding for the past
-          2 years and I'm currently looking for work in the software development
+          two years and I'm currently looking for work in the software development
           industry.
           <br />
           <br />
