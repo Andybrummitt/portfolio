@@ -1,3 +1,8 @@
+Project Information
+
+My portfolio website built with HTML, CSS, JS and React on the front end hosted on netlify utilising netlify forms. https://andybrummitt.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

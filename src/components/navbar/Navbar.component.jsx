@@ -20,7 +20,7 @@ const Navbar = () => {
             </Link>
         </div>
         <ul className="info-links">
-            <li><a href="https://uk.linkedin.com/in/andy-brummitt-b4604847">
+            <li><a href="https://www.linkedin.com/in/andy-brummitt-dev/">
             <FontAwesomeIcon icon={faLinkedin} />
             </a></li>
             <li><a href="https://github.com/Andybrummitt?tab=repositories">
