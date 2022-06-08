@@ -1,14 +1,17 @@
 import {
   faCircleArrowLeft,
-  faCircleArrowRight,
+  faCircleArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import "./project.styles.scss";
 
 const Project = ({ info, showLeft, showRight }) => {
+
   const { image, title, about, website, github } = info;
+
+  const [ imageLoaded, setImageLoaded ] = useState(false);
 
   return (
     <div className="project-container">
@@ -52,7 +55,7 @@ const Project = ({ info, showLeft, showRight }) => {
             transition: { duration: 0.2 },
           }}
         >
-          <img src={image} alt="project-image" />
+        <img src={image} alt="project-image" className={`${imageLoaded ? '' : 'hide'}`} onLoad={() => setImageLoaded(true)} />
         </motion.section>
         <section className="about-project">
           <motion.p
