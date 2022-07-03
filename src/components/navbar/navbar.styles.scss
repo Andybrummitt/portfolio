@@ -6,11 +6,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border-bottom: 0.1rem solid white;
     ul {
         display: flex;
         list-style-type: none;
         align-items: center;
+
+        li:first-child {
+            border-right: 0.05rem solid white;
+        }
 
         li {
             padding: 0.4rem;
@@ -92,6 +100,10 @@ nav {
 
         .home-link, .info-links li {
             font-size: 2.5rem;
+        }
+
+        #contact-link {
+            font-size: 2rem;
         }
     }
 }

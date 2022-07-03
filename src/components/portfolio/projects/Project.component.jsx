@@ -1,93 +1,52 @@
-import {
-  faCircleArrowLeft,
-  faCircleArrowRight
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 import "./project.styles.scss";
 
-const Project = ({ info, showLeft, showRight }) => {
+const Project = ({ info }) => {
+  const { image, title, about, website, github, technologies } = info;
 
-  const { image, title, about, website, github } = info;
-
-  const [ imageLoaded, setImageLoaded ] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <div className="project-container">
-      <span>
-        <FontAwesomeIcon
-          onClick={showLeft}
-          className="arrow-left"
-          icon={faCircleArrowLeft}
-        />
-      </span>
-      <span>
-        <FontAwesomeIcon
-          onClick={showRight}
-          className="arrow-right"
-          icon={faCircleArrowRight}
-        />
-      </span>
-      <motion.div
-        key={title}
-        className="inner-container"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.2 } }}
-      >
-        <motion.h3
-          className="project-title"
-          initial={{ y: -200 }}
-          animate={{ y: 0, transition: { duration: 0.5 } }}
-          exit={{
-            y: -200,
-            transition: { duration: 0.5 },
-          }}
-        >
-          {title}
-        </motion.h3>
-        <motion.section
-          className="image-container"
-          initial={{ x: "-100vw" }}
-          animate={{ x: 0, transition: { duration: 0.2, delay: 0.4 } }}
-          exit={{
-            x: "-100vw",
-            transition: { duration: 0.2 },
-          }}
-        >
-        <img src={image} alt="project-image" className={`${imageLoaded ? '' : 'hide'}`} onLoad={() => setImageLoaded(true)} />
-        </motion.section>
+      <div className="inner-container">
+        <h3 className="project-title">{title}</h3>
+        <section className="image-container">
+          <img
+            src={image}
+            alt="project-image"
+            className={`${imageLoaded ? "" : "hide"}`}
+            onLoad={() => setImageLoaded(true)}
+          />
+        </section>
+
         <section className="about-project">
-          <motion.p
-            initial={{ x: "100vw" }}
-            animate={{ x: 0, transition: { duration: 0.5, delay: 0.5 } }}
-            exit={{
-              x: "100vw",
-              transition: { duration: 0.5 },
-            }}
-          >
-            {about}
-          </motion.p>
-          <motion.div
-            className="project-links-container"
-            initial={{ y: 200 }}
-            animate={{ y: 0, transition: { duration: 0.3, delay: 1.5 } }}
-            exit={{
-              y: 200,
-              transition: { duration: 0.3 },
-            }}
-          >
-            {website ? (
-              <button className="website-btn">
-                <a href={website}>See Website</a>
-              </button>
-            ) : null}
+          <div className="technologies-used">
+            <h3>Technologies Used:</h3>
+            <ul>
+              {technologies.map((elem) => (
+                <li key={uuidv4()}>{elem}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="more-information">
+            <h3>More information</h3>
+            <p>{about}</p>
+          </div>
+        </section>
+        <div className="project-links-container">
+          {website ? (
+            <button className="website-btn">
+              <a href={website}>See Website</a>
+            </button>
+          ) : null}
+          {github ? (
             <button className="github-btn">
               <a href={github}>See Github</a>
             </button>
-          </motion.div>
-        </section>
-      </motion.div>
+          ) : null}
+        </div>
+      </div>
     </div>
   );
 };

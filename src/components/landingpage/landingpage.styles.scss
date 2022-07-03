@@ -51,10 +51,7 @@
 
 .lower-container {
     @extend .upper-container;
-    border-bottom-right-radius: 0;
-    span {
-        animation-delay: 1s;
-    }
+    animation-delay: 0.5s;
     position: absolute;
     bottom: 0;
     width: 100%;

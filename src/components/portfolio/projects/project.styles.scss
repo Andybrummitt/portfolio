@@ -11,6 +11,7 @@
     border-radius: 0.5rem;
     max-width: 900px;
     position: relative;
+    font-size: 0.8rem;
 
     .project-title {
         text-align: center;
@@ -19,6 +20,16 @@
 
     .about-project {
         margin: 0.3rem 0;
+        h3 {
+            text-align: center;
+            margin: 1rem;
+        }
+        .technologies-used {
+            text-align: center;
+            ul li {
+                list-style-type: none;
+            }
+        }
     }
 
     .image-container {
@@ -27,20 +38,6 @@
             width: 100%;
             height: auto;
         }
-    }
-
-    svg {
-        position: absolute;
-        top: 1%;
-        font-size: 2rem;
-        color: variables.$orange-color;
-        cursor: pointer;
-    }
-    .arrow-left {
-        left: 3%;
-    }
-    .arrow-right {
-        right: 3%;
     }
 
     .project-links-container {
@@ -82,7 +79,7 @@
 @media screen and (min-width: 768px) {
     .project-container {
         padding: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
 
         .project-title {
             margin: 0.8rem;
@@ -101,6 +98,6 @@
 @media screen and (min-height: 850px){
     .project-container {
         padding: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }

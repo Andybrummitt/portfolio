@@ -32,8 +32,11 @@ const AboutMeSection = () => {
     <div className="animation-ref-container" ref={ref}>
       <motion.section className="intro-section" animate={controls}>
         <p>
-          I'm an Essex-based aspiring developer who has been coding for the past
-          two years and I'm currently looking for work in the software development
+          I'm an Essex-based developer who has been coding for the past
+          two years. 
+          <br/>
+          <br/>
+          I love building websites and web apps and I'm currently looking for work in the software development
           industry.
           <br />
           <br />

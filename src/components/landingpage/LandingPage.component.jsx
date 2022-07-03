@@ -22,7 +22,7 @@ const LandingPage = () => {
   return (
     <div className="page-container">
       <div className="upper-container">
-        <span>Self-Taught</span>
+        <span>Full-Stack</span>
       </div>
       <div className="content-container">
         <div className="intro-container">

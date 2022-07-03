@@ -1,7 +1,7 @@
 @use "../../styles/variables";
 
 .about-me-container {
-    height: 100vh;
+    height: 90vh;
     background: variables.$dark-bg-color;
 }
 
@@ -61,6 +61,17 @@
                 border-bottom: 0.05rem solid grey;
             }
         }
+        
+    }
+}
+
+.skill-container {
+    width: 120px;
+    color: white;
+    height: 200px;
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -118,64 +129,4 @@
             font-size: 1.2rem;
         }
         }
-}
-
-.star-rating-container {
-    margin-left: auto;
-    color: rgb(0, 0, 0, 0.1);
-    font-size: 0.8rem;
-}
-
-.animate-4-stars {
-    
-    svg:nth-child(1) { 
-        animation: colorStar 0.5s forwards;  
-    }
-    svg:nth-child(2) {  
-        animation: colorStar 0.5s forwards;  
-    }
-    svg:nth-child(3) {
-        animation: colorStar 0.5s forwards;
-    }
-    svg:nth-child(4) { 
-        animation: colorStar 0.5s forwards;  
-    }
-}
-
-.animate-5-stars {
-    @extend .animate-4-stars;
-    svg:nth-child(5) {  
-        animation: colorStar 0.5s forwards;  
-    }
-}
-
-.animate-6-stars {
-    @extend .animate-5-stars;
-    svg:nth-child(6) {  
-        animation: colorStar 0.5s forwards;  
-    }
-}
-
-.animate-7-stars {
-    @extend .animate-6-stars;
-    svg:nth-child(7) {  
-        animation: colorStar 0.5s forwards;  
-    }
-}
-
-.animate-8-stars {
-    @extend .animate-7-stars;
-    svg:nth-child(8) {  
-        animation: colorStar 0.5s forwards;  
-    }
-}
-
-@keyframes colorStar {
-    0% {
-        color: rgb(0, 0, 0, 0.1);
-    }
-    100% {
-        transform: scale(1.15);
-        color: #E0AA3E;
-    }
 }

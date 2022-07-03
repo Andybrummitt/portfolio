@@ -2,21 +2,24 @@
 
 .portfolio-container {
     position: relative;
-    height: 100vh;
-    background: variables.$dark-bg-color;
+    min-height: 90vh;
+    background: variables.$dark-bg-color;  
 }
 
 .portfolio-content-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     height: calc(100% - 75px);
     min-height: fit-content;
     padding: 0.5rem;
-    background: url("../../images/top-layered-waves-haikei.svg"), url("../../images/layered-waves-haikei.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 100% auto, 100% auto;
-    background-position: 0 0, bottom;
+    border-top: 0.1rem solid white;
+    // background: url("../../images/top-layered-waves-haikei.svg"), url("../../images/layered-waves-haikei.svg");
+    // background-repeat: no-repeat, no-repeat;
+    // background-size: 20% auto, 20% auto;
+    // background-position: 0 0, bottom;
 }
 
 .contact-link-btn {
