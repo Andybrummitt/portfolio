@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Button from "../button/Button.component";
 
@@ -24,7 +24,7 @@ const PortfolioLinkButton = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 4,
+        delay: 1,
         duration: 1,
       },
     },

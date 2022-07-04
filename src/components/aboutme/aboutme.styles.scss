@@ -1,16 +1,15 @@
 @use "../../styles/variables";
 
 .about-me-container {
-    height: 90vh;
     background: variables.$dark-bg-color;
+    min-height: 90vh;
 }
 
 .sections-container {
+    min-height: calc(90vh - 75px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 75px);
-    min-height: fit-content;
     padding: 0.5rem;
     overflow: hidden;
     background: url("../../images/top-layered-waves-haikei.svg"), url("../../images/layered-waves-haikei.svg");
@@ -29,7 +28,7 @@
 
     section {
         margin: 1rem;
-        max-width: 600px;
+        max-width: 800px;
         background: rgb(255, 255, 255, 0.88);
     }
 
@@ -43,53 +42,60 @@
             color: variables.$orange-color;
         }
     }
-    .skills-section {
-        padding: 0.5rem;
-        width: 100%;
-        border-radius: 1rem;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-        h3 {
-            text-align: center;
-        }
-        ul {
-            margin: 1rem 0;
-            li {
-                display: flex;
-                justify-content: space-around;
-                padding: 0.1rem 0;
-                margin: 0.05rem 0;
-                border-bottom: 0.05rem solid grey;
-            }
-        }
-        
-    }
 }
 
-.skill-container {
-    width: 120px;
+.skills-container {
+    text-align: center;
     color: white;
-    height: 200px;
+    margin: 1rem 0;
+}
+
+.images-container {
+    margin: 1rem 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     img {
-        width: 100%;
-        height: auto;
+        margin: 0.3rem;
+        height: 50px;
+        width: auto;
+        display: inline-block;
     }
 }
 
-@media screen and (min-width: 337px) {
-    .sections-container {
-    
-    .skills-section, .intro-section {
-        font-size: 1rem;
-        width: 90%;
-        }
+.button-container {
+    margin: 2rem 0;
+}
+
+.skill-list-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    span {
+        margin: 0.3rem;
     }
+    max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
+
+    .images-container {
+        img {
+           height: 65px; 
+        }
+    }
+
+    .skill-list-container {
+        span {
+            font-size: 1.2rem;
+        }
+    }
     .sections-container {
 
-        justify-content: space-around;
-        .skills-section, .intro-section {
+        .intro-section {
             font-size: 1.5rem;
             width: 70%;
             padding: 1rem;
@@ -97,6 +103,12 @@
 
         button a, button {
             font-size: 1.5rem;
+        }
+    }
+    .skill-container {
+        img {
+            height: 80px;
+            width: auto;
         }
     }
 }
@@ -109,7 +121,7 @@
             height: 750px;
         }
     }    
-    .skills-section, .intro-section {
+    .intro-section {
         font-size: 1.2rem;
         width: 70%;
         padding: 1rem;
@@ -119,6 +131,17 @@
 @media screen and (min-width: 1024px){
     .sections-container {
         background-size: 100% 60%, 100% 60%;
+    }
+    .images-container {
+        img {
+            margin: 0.5rem;
+        }
+    }
+
+    .skills-container {
+        span {
+            margin: 0.5rem;
+        }
     }
 }
 

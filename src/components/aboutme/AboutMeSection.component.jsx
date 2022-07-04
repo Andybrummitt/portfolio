@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const AboutMeSection = () => {
@@ -32,12 +32,12 @@ const AboutMeSection = () => {
     <div className="animation-ref-container" ref={ref}>
       <motion.section className="intro-section" animate={controls}>
         <p>
-          I'm an Essex-based developer who has been coding for the past
-          two years. 
-          <br/>
-          <br/>
-          I love building websites and web apps and I'm currently looking for work in the software development
-          industry.
+          I'm an Essex-based developer who has been coding for the past two
+          years.
+          <br />
+          <br />
+          I love building websites and am currently looking for work in the
+          software development industry.
           <br />
           <br />
           See my{" "}

@@ -5,7 +5,7 @@ nav {
     background: variables.$dark-bg-color;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: max(10vh, 60px);
     position: sticky;
     top: 0;
     left: 0;
