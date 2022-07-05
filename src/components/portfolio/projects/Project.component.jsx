@@ -1,4 +1,4 @@
-import { useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { v4 as uuidv4 } from "uuid";
@@ -8,9 +8,8 @@ const Project = ({ info }) => {
   const { image, title, about, website, github, technologies } = info;
 
   const sectionVariants = {
-    hidden: { y: "100vh", opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
         duration: 1,
@@ -19,9 +18,7 @@ const Project = ({ info }) => {
   };
 
   const controls = useAnimation();
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
+  const { ref, inView } = useInView();
 
   useEffect(() => {
     if (inView) {
@@ -35,8 +32,8 @@ const Project = ({ info }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
-    <div className="ref-container">
-      <div className="project-container">
+    <div className="ref-container" ref={ref}>
+      <motion.div className="project-container" animate={controls}>
       <div className="inner-container">
         <h3 className="project-title">{title}</h3>
         <section className="image-container">
@@ -75,7 +72,7 @@ const Project = ({ info }) => {
           ) : null}
         </div>
       </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
