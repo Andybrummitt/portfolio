@@ -9,7 +9,7 @@ const projectObjs = [
         key: 1,
         title: 'Tag My Tunes',
         technologies: ['HTML', 'CSS', 'Bootstrap', 'Javascript', 'React', 'Node', 'Express'],
-        about: 'My most recent project is a file ID3 tagger for mp3 files. When converting videos to mp3s the title and artist fields are not populated correctly. Users can upload up to 100 mp3 files and the server will populate those fields to its best guess and remove unwanted strings in the file name. The user then receives a zip file to download with the altered files. I\'ve decided to keep the source code in a private github repository as I want to deploy this application with proper hosting.',
+        about: 'My most recent project is a file ID3 tagger for mp3 files. When converting music videos to mp3s the title and artist fields are often not populated correctly. Users can upload up to 100 mp3 files and the server will populate those fields to its best guess and remove unwanted strings in the file name. The user then receives a zip file to download with the altered files. I\'ve decided to keep the source code in a private github repository as I want to deploy this application with proper hosting.',
         website: 'https://tagmytunes.herokuapp.com/',
         github: null,
         image: tagMyTunes
