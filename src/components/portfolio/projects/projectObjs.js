@@ -19,7 +19,7 @@ const projectObjs = [
         key: 2,
         title: 'Mixin',
         technologies: ['HTML', 'CSS', 'Javascript', 'Node', 'Express'],
-        about: 'This app is a single page application that gives users information about cocktail ingredients and recipes. The user can input ingredients and see cocktails that they can make or ingredients that they need. They can search specific cocktails by ingredient or name and more. The app uses the cocktailDB api where the client makes calls to the express server which calls the cocktailDB REST api which in turn returns the data to the client through the server. I wanted to build a SPA with vanilla javascript to learn more about how React works under the hood.',
+        about: 'This app is a single page application that gives users information about cocktail ingredients and recipes. The user can input ingredients and see cocktails that they can make or ingredients that they need. They can search specific cocktails by ingredient or name and more. The app uses the cocktailDB API where the client makes calls to the express server which calls the cocktailDB REST API which in turn returns the data to the client through the server. I wanted to build a SPA with vanilla javascript to learn more about how React and React Router works under the hood.',
         website: 'http://mixinapp.herokuapp.com/',
         github: 'https://github.com/Andybrummitt/cocktailapp',
         image: mixin
