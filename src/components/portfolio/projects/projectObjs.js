@@ -46,7 +46,7 @@ const projectObjs = [
         key: 5,
         title: 'Andy\'s Pizza',
         technologies: ['HTML', 'CSS', 'Javascript', 'Node', 'Express', 'EJS', 'Webpack'],
-        about: 'This project is a mock restaurant website. Users can "book a table" and will recieve a booking confirmation email. This was built with EJS templating on the back end.',
+        about: 'This project is a mock restaurant website. Users can "book a table" and will receive a booking confirmation email. This was built with EJS templating on the back end.',
         github: 'https://github.com/Andybrummitt/andyspizza',
         website: 'http://andyspizza.herokuapp.com/',
         image: andysPizza
