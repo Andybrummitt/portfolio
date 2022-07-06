@@ -3,6 +3,7 @@
 .portfolio-container {
     position: relative;
     min-height: 90vh;
+    height: fit-content;
     background: variables.$dark-bg-color;  
 }
 
@@ -40,12 +41,6 @@
 .contact-link-btn:hover {
     transform: scale(1.2);
     transition: 0.5s all ease;
-}
-
-@media screen and (max-height: 600px){
-    .portfolio-container {
-        height: 900px;
-    }
 }
 
 @media screen and (min-width: 768px) {

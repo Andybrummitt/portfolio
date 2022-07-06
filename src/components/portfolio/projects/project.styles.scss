@@ -2,13 +2,12 @@
 
 .project-container {
     width: 95%;
-    background: rgb(255, 255, 255, 0.88);
+    color: white;
     height: auto;
     overflow: hidden;
     margin: 2rem auto;
     padding: 0.5rem;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius: 0.5rem;
+    border-bottom: 0.1rem solid variables.$orange-color;
     max-width: 900px;
     position: relative;
     font-size: 0.8rem;
@@ -31,6 +30,21 @@
             }
         }
     }
+
+    .inner-about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+            align-self: center;
+            height: 20rem;
+            width: auto;
+            display: none;
+        }
+    }
+
+    
 
     .image-container {
         width: 100%;
@@ -79,7 +93,7 @@
 @media screen and (min-width: 768px) {
     .project-container {
         padding: 1rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
 
         .project-title {
             margin: 0.8rem;
@@ -92,12 +106,24 @@
         button {
             font-size: 1.5rem;
         }
+        .inner-about-container {
+            flex-direction: row;
+            padding: 0.5rem;
+    
+            img {
+                display: initial;
+            }
+        }
+
+        .inner-about-container * {
+            padding: 0 0.5rem;
+        }
     }
 }
 
 @media screen and (min-height: 850px){
     .project-container {
         padding: 1rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
