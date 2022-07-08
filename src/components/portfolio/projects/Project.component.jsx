@@ -70,12 +70,12 @@ const Project = ({ info }) => {
         <div className="project-links-container">
           {website ? (
             <button className="website-btn">
-              <a href={website}>See Website</a>
+              <a target="_blank" href={website}>See Website</a>
             </button>
           ) : null}
           {github ? (
             <button className="github-btn">
-              <a href={github}>See Github</a>
+              <a target="_blank" href={github}>See Github</a>
             </button>
           ) : null}
         </div>

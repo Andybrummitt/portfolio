@@ -18,12 +18,12 @@ const Navbar = () => {
           <a href="/contact">Contact</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/andy-brummitt-dev/">
+          <a target="_blank" href="https://www.linkedin.com/in/andy-brummitt-dev/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
         <li>
-          <a href="https://github.com/Andybrummitt?tab=repositories">
+          <a target="_blank" href="https://github.com/Andybrummitt?tab=repositories">
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>

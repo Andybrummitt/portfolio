@@ -41,7 +41,7 @@ const AboutMeSection = () => {
           <br />
           <br />
           See my{" "}
-          <a href="https://uk.linkedin.com/in/andy-brummitt-b4604847">
+          <a target="_blank" href="https://uk.linkedin.com/in/andy-brummitt-b4604847">
             {" "}
             LinkedIn
           </a>{" "}
