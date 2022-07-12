@@ -1,25 +1,31 @@
 @use "../../styles/variables";
 
 .page-container {
-    background: variables.$dark-bg-color;
+    min-height: fit-content;
     height: 90vh;
-    position: relative;
-    background: url("../../images/layered-waves-haikei.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% auto;
+    background: variables.$dark-bg-color;
     display: flex;
+    overflow: hidden;
 }
 
 .buttons-container {
     margin: 5rem; 
     display: flex;
-    justify-content: space-around;
-    
+    align-items: center;
+    justify-content: center;
+    button {
+        margin: 0 5rem;
+    }  
 }
 
 .content-container {
-    margin: 5rem auto;
+    width: 100%;
+    height: 100%;
+    background: url("../../images/layered-waves-haikei.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+    margin-top: 5rem;
     
     .intro-name {
         text-align: center;
@@ -30,132 +36,19 @@
     p {
         color: white;
         font-size: 2rem;
+        text-align: center;
     }
 }
 
-.upper-container {
-    background: transparent;
-    border-top: 0.1rem solid white;
-    border-bottom: 0.1rem solid white;
-    height: 75px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-    overflow: hidden;
-    color: white;
-    white-space: nowrap;
-    span {
-        transform: translateX(-100%);
-        animation-name: loopScrollText;
-        animation-duration: 8s;
-        animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-        animation-iteration-count: infinite;
-        font-family: variables.$banner-font;
-    }
-}
-
-@keyframes loopScrollText {
-    from {
-        transform: translateX(100%)
-    }
-
-    to {
-        transform: translateX(-100%)
-    }
-}
-
-
-.lower-container {
-    @extend .upper-container;
-    animation-delay: 0.5s;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.intro-container {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    span {
-        white-space:pre;
-    }
-}
-
-.animate-intro-title {
-    animation: introTitleAnimation 2s forwards; 
-}
-
-.intro-title {
-    font-size: 2.5rem;
-}
-
-.intro-name-span {
-    animation: fallBounce 3s forwards;
-    font-size: 2rem;
-    transform: translateY(-300px);
-    white-space: pre;
-}
 
 .orange-bold {
     color: variables.$orange-color;
     font-weight: bold;
 }
 
-@keyframes fallBounce {
-    0% {
-        transform: translateY(-300px);
-    }
-    20% {
-        transform: scale(1.1, 0.8)
-    }
-    30% {
-        transform: translateY(0);   
-    }
-    50% {
-        transform: scale(1.15, 0.7);
-    }
-    60% {
-        transform: scale(0.9, 1.1)
-    }
-    80% {
-        transform: scale(1.1, 0.8)
-    }
-    100% {
-        transform: scale(1, 1)
-    }
-}
-
-@media screen and (max-height: 600px) {
-    .page-container {
-        height: 600px;
-    }    
-}
-
-@media screen and (min-width: 768px) {
-
-    .upper-container {
-        font-size: 3.5rem;
-    }
-
-    .intro-name-span {
-        font-size: 2.5rem;
-    }
-
-    .link-button a {
-    font-size: 1.5rem;
-    }
-}
 
 @media screen and (min-width: 1024px) {
-    .intro-name-span {
-        font-size: 3rem;
-    }
-    .content-container {
-        background-size: 100% 90%;
-    }
+    // .content-container {
+    //     background-size: 100% 90%;
+    // }
 }

@@ -1,7 +1,6 @@
 import PageTitle from "../pagetitle/PageTitle.component";
 import "./aboutme.styles.scss";
 import AboutMeSection from "./AboutMeSection.component";
-import PortfolioLinkButton from "./PortfolioLinkButton.component";
 import SkillsSection from "./SkillsSection.component";
 
 const AboutMe = () => {

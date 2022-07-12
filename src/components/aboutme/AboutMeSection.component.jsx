@@ -31,7 +31,7 @@ const AboutMeSection = () => {
   return (
     <div className="animation-ref-container" ref={ref}>
       <motion.section className="intro-section" animate={controls}>
-          <h2>Me, myself and I</h2>
+          <h2>Introduction</h2>
           <h4 className="orange-bold">Who am I?</h4>
           <p>
             I'm a web developer specialising in the MERN Stack who has a passion for creating clean looking websites and functional web apps to provide a seamless experience for the end user.

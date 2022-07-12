@@ -53,50 +53,8 @@
     z-index: -1;
 }
 
-
-.cta-button-animation {
-    animation: ctaButtonAppear 5s forwards;
-}
-
 .cta-button-orange {
     background: variables.$orange-color;
-}
-
-.portfolio-btn {
-    opacity: 1;
-}
-
-@keyframes ctaButtonAppear {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    } 
-    30% {
-        transform: scale(1.1);
-        opacity: 1;
-    }
-    45% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    60% {
-        transform: scale(1.1);
-        opacity: 1;
-    }
-    75% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    90% {
-        transform: scale(1.1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 @media screen and (min-width: 1024px) {
