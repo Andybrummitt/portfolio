@@ -32,13 +32,11 @@ const PortfolioLinkButton = () => {
 
   return (
     <div className="animation-ref-container" ref={ref}>
-      <motion.div className="button-container" animate={controls}>
         <Button
           innerText="See My Work"
           path="portfolio"
           btnClass="portfolio-btn"
         />
-      </motion.div>
     </div>
   );
 };

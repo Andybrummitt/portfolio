@@ -10,7 +10,6 @@ const AboutMe = () => {
       <PageTitle text={"About me"} />
       <div className="sections-container">
         <AboutMeSection />
-        <PortfolioLinkButton />
         <SkillsSection />
       </div>
     </div>

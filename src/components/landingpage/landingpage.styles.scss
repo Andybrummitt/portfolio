@@ -4,15 +4,33 @@
     background: variables.$dark-bg-color;
     height: 90vh;
     position: relative;
-}
-
-.content-container {
-    height: calc(100% - 150px);
-    min-height: fit-content;
     background: url("../../images/layered-waves-haikei.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% auto;
+    display: flex;
+}
+
+.buttons-container {
+    margin: 5rem; 
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.content-container {
+    margin: 5rem auto;
+    
+    .intro-name {
+        text-align: center;
+        font-size: 3.5rem;
+        margin: 1rem;
+    }
+
+    p {
+        color: white;
+        font-size: 2rem;
+    }
 }
 
 .upper-container {
@@ -66,18 +84,6 @@
     span {
         white-space:pre;
     }
-}
-
-.intro-name {
-    text-align: center;
-    padding: 1rem;
-    color: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-    height: 150px;
 }
 
 .animate-intro-title {

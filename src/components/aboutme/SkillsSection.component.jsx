@@ -9,7 +9,7 @@ import js from "../../images/logo-images/js.png";
 import node from "../../images/logo-images/node.png";
 import react from "../../images/logo-images/react.png";
 import sass from "../../images/logo-images/sass.png";
-import webpack from "../../images/logo-images/webpack.png";
+import Skill from "./Skill";
 
 const SkillsSection = () => {
   const controls = useAnimation();
@@ -41,27 +41,15 @@ const SkillsSection = () => {
     <div className="skills-ref-container" ref={ref}>
       <motion.div animate={controls} className="skills-container">
         <h2>Skills & Technologies</h2>
-        <div className="images-container">
-          <img src={html} alt="HTML 5" />
-          <img src={css} alt="CSS 3" />
-          <img src={js} alt="Javascript" />
-          <img src={react} alt="React" />
-          <img src={bootstrap} alt="Bootstrap 5" />
-          <img src={node} alt="Node Express" />
-          <img src={sass} alt="SCSS" />
-          <img src={firebase} alt="Firebase" />
-          <img src={webpack} alt="Webpack" />
-        </div>
         <div className="skill-list-container">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Javascript</span>
-          <span>React</span>
-          <span>Bootstrap</span>
-          <span>Node+Express</span>
-          <span>SCSS</span>
-          <span>Firebase</span>
-          <span>Webpack</span>
+          <Skill img={html} name="HTML 5" />
+          <Skill img={css} name="CSS 3" />
+          <Skill img={js} name="Javascript" />
+          <Skill img={react} name="React" />
+          <Skill img={bootstrap} name="Bootstrap" />
+          <Skill img={node} name="Node" />
+          <Skill img={node} name="Express" />
+          <Skill img={sass} name="SCSS" />
         </div>
       </motion.div>
     </div>

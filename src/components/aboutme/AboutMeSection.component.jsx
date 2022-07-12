@@ -31,22 +31,23 @@ const AboutMeSection = () => {
   return (
     <div className="animation-ref-container" ref={ref}>
       <motion.section className="intro-section" animate={controls}>
-        <p>
-          I'm an Essex-based developer who has been coding for the past two
-          years.
+          <h2>Me, myself and I</h2>
+          <h4 className="orange-bold">Who am I?</h4>
+          <p>
+            I'm a web developer specialising in the MERN Stack who has a passion for creating clean looking websites and functional web apps to provide a seamless experience for the end user.
+          </p>
+          
           <br />
           <br />
-          I love building websites and am currently looking for work in the
-          software development industry.
+          <h4 className="orange-bold">My Goals</h4>
+          <p>
+            My short term goals are to learn NextJS and GraphQL and develop a social media application with the technologies.
+          <br/>
+          <br/>
+            In the future I hope to expand my skillset to mobile development and build applications with React Native.
+          </p>
           <br />
           <br />
-          See my{" "}
-          <a target="_blank" href="https://uk.linkedin.com/in/andy-brummitt-b4604847">
-            {" "}
-            LinkedIn
-          </a>{" "}
-          for more details.
-        </p>
       </motion.section>
     </div>
   );
