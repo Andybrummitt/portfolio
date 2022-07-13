@@ -12,14 +12,13 @@
     background: url('../../images/layered-waves-svg-about-me.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-size: 100% 100%;
+    background-size: 200% auto;
     display: flex;
-    justify-content: space-around;
-        
+    flex-direction: column;
 }
 
 .animation-ref-container, .skills-ref-container {
-    margin-top: 5rem;
+    margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,7 +31,7 @@
 
 .intro-section {
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     width: 100%;
 
     h2 {
@@ -50,9 +49,8 @@
 }
 
 .skills-container {
-
     h2 {
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
     text-align: center;
     color: white;
@@ -75,42 +73,51 @@
     max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+.skill-container {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    border-radius: 10rem;
+    border: 0.2rem solid variables.$orange-color;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    height: 0;
+    width: 0;
+    position: absolute;
+}
 
-    .images-container {
-        img {
-           height: 65px; 
+@media screen and (min-width: 520px) {
+    .intro-section {
+        h2 {
+            margin: 4rem 0 2rem 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .animation-ref-container, .skills-ref-container {
+        margin-top: 6rem;
+    }
+
+    .skills-container {
+        h2 {
+            margin: 4rem 0 2rem 0;
         }
     }
 
     .sections-container {
-        font-size: 1.5rem;
-        .intro-section {
-            width: 70%;
-            padding: 1rem;
-        }
+        font-size: 1.15rem;
+        flex-direction: row;
 
         button a, button {
             font-size: 1.5rem;
         }
-    }
-    .skill-container {
-        margin: 2rem;
-        display: flex;
-        flex-direction: column;
-        height: 140px;
-        width: 140px;
-        border-radius: 10rem;
-        border: 0.2rem solid variables.$orange-color;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    img {
-        height: 0;
-        width: 0;
-        position: absolute;
     }
 }
 
@@ -153,16 +160,22 @@
 }
 
 @media screen and (min-width: 1024px){
-    .images-container {
-        img {
-            margin: 0.5rem;
-        }
+
+    .animation-ref-container, .skills-ref-container {
+        margin-top: 7rem;
+        font-size: 1.5rem;
     }
 
-    .skills-container {
-        span {
-            margin: 0.5rem;
-        }
+    .sections-container {
+        padding: 0 3rem;
+        background-size: 100% 70%;
     }
+
+    .skill-container {
+        margin: 0.75rem;
+        height: 140px;
+        width: 140px;
+    }
+
 }
 

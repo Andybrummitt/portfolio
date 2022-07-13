@@ -14,8 +14,8 @@ const LandingPage = () => {
           <span>Javascript</span>, <span>HTML</span> and <span>CSS</span>.{" "}
         </p>
         <div className="buttons-container">
-          <Button innerText="About Me" path="aboutme" btnClass="aboutme-btn" />
           <Button innerText="See My Work" path="portfolio" btnClass="portfolio-btn"/>
+          <Button innerText="About Me" path="aboutme" btnClass="aboutme-btn" />
         </div>
       </div>
     </div>

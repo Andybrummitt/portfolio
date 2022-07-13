@@ -17,7 +17,7 @@
     background: variables.$dark-bg-color;
     cursor: pointer;
     a {
-        padding: 0.75rem;
+        padding: 0.25rem;
         border: 0.1rem solid white;
         color: white;
         font-size: 1rem;
@@ -55,6 +55,13 @@
 
 .cta-button-orange {
     background: variables.$orange-color;
+}
+
+@media screen and (min-width: 768px) {
+    .link-button a {
+        padding: 0.75rem;
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
