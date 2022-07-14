@@ -3,6 +3,7 @@ import PageTitle from "../pagetitle/PageTitle.component";
 import "./portfolio.styles.scss";
 import Project from "./projects/Project.component";
 import projectObjs from "./projects/projectObjs";
+import bootstrap from '../../images/logo-images/bootstrap.png'
 
 const Portfolio = () => {
   return (

@@ -1,129 +1,24 @@
 @use "../../../styles/variables";
 
 .project-container {
-    width: 95%;
-    color: white;
-    height: auto;
-    overflow: hidden;
-    margin: 2rem auto;
-    padding: 0.5rem;
-    border-bottom: 0.1rem solid variables.$orange-color;
-    max-width: 900px;
     position: relative;
-    font-size: 0.8rem;
-
-    .project-title {
-        text-align: center;
-        margin: 0.3rem;
+    display: inline-block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 90%;
+        height: auto;
     }
-
-    .about-project {
-        margin: 0.3rem 0;
-        h3 {
-            text-align: center;
-            margin: 1rem;
-        }
-        .technologies-used {
-            text-align: center;
-            ul li {
-                list-style-type: none;
-            }
-        }
-    }
-
-    .inner-about-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        img {
-            align-self: center;
-            height: 20rem;
-            width: auto;
-            display: none;
-        }
-    }
-
-    
-
-    .image-container {
-        width: 100%;
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    .project-links-container {
-        display: flex;
-        margin: 1.5rem 0;
-        justify-content: center;
-        
-        button {
-            border-radius: 0.25rem;
-            border: 0.05rem solid black;   
-            margin: 0 1rem; 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;  
-            a {
-                padding: 0.5rem;
-                text-decoration: none;
-                color: white;
-                width: 100%;
-                height: 100%;
-                
-            }
-        }
-        .website-btn {
-            background: variables.$orange-color;
-        }
-        .github-btn {
-            background: variables.$red-svg-color;
-        }
-    }
+    // overflow: hidden;
 }
 
-@media screen and (min-width: 540px) {
-    .project-container {
-        width: 85%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .project-container {
-        padding: 1rem;
-        font-size: 1.1rem;
-
-        .project-title {
-            margin: 0.8rem;
-        }
-
-        span svg {
-            font-size: 3rem;
-        }
-
-        button {
-            font-size: 1.5rem;
-        }
-        .inner-about-container {
-            flex-direction: row;
-            padding: 0.5rem;
-    
-            img {
-                display: initial;
-            }
-        }
-
-        .inner-about-container * {
-            padding: 0 0.5rem;
-        }
-    }
-}
-
-@media screen and (min-height: 850px){
-    .project-container {
-        padding: 1rem;
-        font-size: 1rem;
-    }
+.project-ref-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
