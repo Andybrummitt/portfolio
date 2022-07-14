@@ -8,6 +8,8 @@
 
 .sections-container {
     min-height: calc(90vh - 75px);
+    
+    height: fit-content;
     overflow: hidden;
     background: url('../../images/layered-waves-svg-about-me.svg');
     background-repeat: no-repeat;
@@ -18,6 +20,7 @@
 }
 
 .animation-ref-container, .skills-ref-container {
+    flex: 1 1 0;
     margin-top: 1rem;
         display: flex;
         flex-direction: column;
@@ -31,7 +34,7 @@
 
 .intro-section {
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     width: 100%;
 
     h2 {
@@ -48,14 +51,9 @@
     }
 }
 
-.skills-container {
-    h2 {
-        margin: 1rem 0;
-    }
-    text-align: center;
-    color: white;
-    margin: 1rem 0;
-    padding: 1rem;
+.skills-section {
+    @extend .intro-section;
+    margin-top: 0rem;
 }
 
 .button-container {
@@ -93,7 +91,7 @@ img {
 }
 
 @media screen and (min-width: 520px) {
-    .intro-section {
+    .intro-section, .skills-container {
         h2 {
             margin: 4rem 0 2rem 0;
         }
@@ -103,6 +101,10 @@ img {
 @media screen and (min-width: 768px) {
     .animation-ref-container, .skills-ref-container {
         margin-top: 6rem;
+    }
+
+    .skills-section {
+        margin-top: 2rem;
     }
 
     .skills-container {

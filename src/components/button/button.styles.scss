@@ -53,6 +53,22 @@
     z-index: -1;
 }
 
+.link-button a:hover {
+    svg {
+        animation: rotateArrowDown 0.2s forwards ease;
+    }
+}
+
+@keyframes rotateArrowDown {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
 .cta-button-orange {
     background: variables.$orange-color;
 }
