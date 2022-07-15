@@ -6,8 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import "./modal.styles.scss";
 
 const ProjectModal = ({ projectInfo, showModal, setShowModal }) => {
-  const { mainImage, title, about, website, github, technologies } =
-    projectInfo;
+  const { mainImage, title, about, website, github, technologies } = projectInfo;
 
   return createPortal(
     <>

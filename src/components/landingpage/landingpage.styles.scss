@@ -64,7 +64,7 @@
 }
 
 
-.color-primary {
+.color-secondary {
     color: variables.$secondary-color;
 }
 
@@ -103,15 +103,10 @@
     }
 }
 
-@media screen and (max-height: 550px){
-    .content-container {
-        background-size: 100% 90%;
-    }
-}
 
 
 @media screen and (min-width: 1024px) {
-
+    
     .buttons-container {
         button {
             max-width: 300px;
@@ -119,3 +114,8 @@
     }
 }
 
+@media screen and (max-height: 550px){
+    .content-container {
+        background-size: 100% 90%;
+    }
+}

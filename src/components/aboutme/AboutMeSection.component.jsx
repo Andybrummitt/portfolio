@@ -1,28 +1,9 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { sectionVariants } from "./aboutMeSectionVariants";
-
 const AboutMeSection = () => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start(sectionVariants.visible);
-    }
-    if (!inView) {
-      controls.start(sectionVariants.hidden);
-    }
-  }, [inView]);
-
   return (
-    <div className="animation-ref-container" ref={ref}>
-      <motion.section className="intro-section" animate={controls}>
-        <h2>Introduction</h2>
-        <h4 className="color-primary">Who am I?</h4>
+    <div className="animation-ref-container">
+      <section className="intro-section">
+        <h2 className="color-secondary">Introduction</h2>
+        <h4 className="color-secondary">Who am I?</h4>
         <p>
           I'm a web developer specialising in the MERN Stack who has a passion
           for creating clean looking websites and functional web apps to provide
@@ -31,7 +12,7 @@ const AboutMeSection = () => {
 
         <br />
         <br />
-        <h4 className="color-primary">My Goals</h4>
+        <h4 className="color-secondary">My Goals</h4>
         <p>
           My short term goals are to learn NextJS and GraphQL and develop a
           social media application with the technologies.
@@ -40,7 +21,7 @@ const AboutMeSection = () => {
           In the future I hope to expand my skillset to mobile development and
           build applications with React Native.
         </p>
-      </motion.section>
+      </section>
     </div>
   );
 };

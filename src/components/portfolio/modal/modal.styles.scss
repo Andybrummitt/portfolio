@@ -17,7 +17,7 @@
     width: 95vw;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .modal-content-container {
@@ -58,12 +58,12 @@
     p {
         color: #22262a;
         font-family: 'Roboto', sans-serif;
-        padding: 0.125rem;
+        padding: 0.5rem;
     }
 
     .modal-upper-section {
         display: flex;
-        background: #5C1EA8;
+        background: #1542A3;
         align-items: center;
         justify-content: center;
         padding-left: 1rem;
@@ -72,12 +72,13 @@
     .modal-close-icon-wrapper {
         padding: 0.25rem;
         margin-left: auto;
-        height: 2rem;
-        width: 2rem;
+        height: 1.9rem;
+        width: 1.9rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #F5D45D;
+        background: red;
+        color: white;
         right: 0;
         font-size: 1.5rem;
         cursor: pointer;
@@ -116,5 +117,21 @@
 @media screen and (max-height: 500px) {
     .project-modal {
         max-height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .modal-content-container {
+        font-size: 1.2rem;
+        h5 {
+            font-size: 2rem;
+        }
+        .project-links-container button a {
+            font-size: 1.5rem;
+        }
+        .modal-close-icon-wrapper {
+            height: 2.4rem;
+            width: 2.4rem;
+        }
     }
 }

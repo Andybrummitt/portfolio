@@ -2,10 +2,10 @@
 
 .link-button {
     font-size: 1.2rem;
-    opacity: 1;
     position: relative;
     border: none;
     width: fit-content;
+    z-index: 1;
     outline: none;
     text-decoration: none;
     display: flex;
@@ -14,6 +14,7 @@
     box-shadow: none;
     background: variables.$primary-color;
     cursor: pointer;
+
     a {
         padding: 0.25rem;
         border: 0.2rem solid variables.$secondary-color;

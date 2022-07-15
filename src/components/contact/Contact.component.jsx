@@ -49,8 +49,6 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = () => {};
-
   return (
     <div className="contact-page-container">
       <PageTitle text={"Contact"} />
@@ -94,7 +92,7 @@ const Contact = () => {
             required
           />
           <motion.button variants={buttonVariants} type="submit">
-            Submit
+            SUBMIT
           </motion.button>
         </motion.form>
       </div>
