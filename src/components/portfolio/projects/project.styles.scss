@@ -12,7 +12,7 @@
         text-align: center;
         cursor: pointer;
         .project-title-wrapper {
-            color: white;
+            color: variables.$primary-color;
             letter-spacing: 0.1rem;
             font-size: 1.2rem;
             background: #5c5c5c;
@@ -32,7 +32,7 @@
         }
         button {
             font-size: 1rem;
-            color: white;
+            color: variables.$primary-color;
             border: none;
             background: transparent;
             text-decoration: none;

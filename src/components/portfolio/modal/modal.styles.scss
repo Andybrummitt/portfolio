@@ -1,3 +1,5 @@
+@use "../../../styles/variables";
+
 //  --------------------------  MODAL --------------------------
 
 .project-modal {
@@ -36,7 +38,7 @@
         text-align: center;
         font-size: 1.5rem;
         letter-spacing: 0.15rem;
-        color: white;
+        color: variables.$primary-color;
     }
 
     .technologies-list {
@@ -48,7 +50,7 @@
             border: 0.1rem solid #22262a;
             background: #424242;
             list-style-type: none;
-            color: white;
+            color: variables.$primary-color;
             padding: 0.125rem;
         }
     }
@@ -91,7 +93,7 @@
             a {
                 font-size: 1.1rem;
                 text-decoration: none;
-                color: white;
+                color: variables.$primary-color;
             }
         }
     }

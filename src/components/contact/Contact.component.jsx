@@ -55,6 +55,7 @@ const Contact = () => {
     <div className="contact-page-container">
       <PageTitle text={"Contact"} />
       <div className="contact-content-container">
+        <h1>Contact</h1>
         <motion.form
           name="contact-form"
           data-netlify="true"

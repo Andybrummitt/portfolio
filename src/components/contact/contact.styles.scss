@@ -1,36 +1,29 @@
 @use "../../styles/variables";
 
 .contact-page-container {
-    background: variables.$dark-bg-color;
     height: 90vh;
-
-    .title-container {
-        border-top: 0.1rem solid white;
-        border-bottom: 0.1rem solid white;
-    }
-
 
     .contact-content-container {
         height: calc(100% - 75px);
         min-height: fit-content;
         padding: 0.5rem;
         overflow: hidden;
-        background: url("../../images/layered-waves-haikei.svg");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        background-position: bottom;
+        h1 {
+            text-align: center;
+        }
     }
 
     form {
         width: 90%;
         max-width: 500px;
         margin: 5rem auto;
-        background: variables.$orange-color;
+        background: variables.$secondary-color;
         padding: 0.5rem;
         border-radius: 0.5rem;
         overflow: hidden;
         
         input, textarea, button {
+            font-family: 'Roboto', sans-serif;
             margin: 0.5rem 0;
             padding: 0.25rem;
             width: 100%;
@@ -39,9 +32,8 @@
         }
 
         button {
-            color: white;
-            background: variables.$dark-bg-color;
-            border: 0.1rem solid white;
+            background: #E6E325;
+            border: 0.1rem solid variables.$primary-color;
             cursor: pointer;
         }
     }
@@ -50,17 +42,13 @@
 @media screen and (min-width: 1024px) {
 
     .contact-page-container {
-    form input, form textarea, form button {
-        font-size: 1.3rem;
-        padding: 0.5rem;
-    }   
+        form input, form textarea, form button {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+        }   
+    h1 {
+        font-size: 3rem;
+    }
 }
 
-.contact-page-container {
-
-.contact-content-container {
-    background-size: 100% 80%;
-}
-
-}
 }

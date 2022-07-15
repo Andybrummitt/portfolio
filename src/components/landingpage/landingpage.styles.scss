@@ -2,9 +2,10 @@
 
 .page-container {
     min-height: 90vh;
-    background: variables.$dark-bg-color;
+    background: variables.$primary-color;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 
 .buttons-container {
@@ -37,12 +38,12 @@
 }
 
 .custom-shape-divider-bottom-1657840038 .shape-fill {
-    fill: #9646fa;
+    fill: variables.$secondary-color;
 }
 .content-container {
     width: 100%;
     min-height: 100%;
-    background: variables.$dark-bg-color;
+    background: variables.$primary-color;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 200% auto;
@@ -64,7 +65,15 @@
 
 
 .color-primary {
-    color: variables.$orange-color;
+    color: variables.$secondary-color;
+}
+
+#landingpage-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -109,3 +118,4 @@
         }
     }
 }
+

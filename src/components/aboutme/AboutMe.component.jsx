@@ -1,4 +1,3 @@
-import PageTitle from "../pagetitle/PageTitle.component";
 import "./aboutme.styles.scss";
 import AboutMeSection from "./AboutMeSection.component";
 import SkillsSection from "./SkillsSection.component";
@@ -6,8 +5,8 @@ import SkillsSection from "./SkillsSection.component";
 const AboutMe = () => {
   return (
     <div className="about-me-container" id="aboutme">
+      <h1>About me</h1>
       <div className="sections-container">
-        <h1>About me</h1>
         <AboutMeSection />
         <SkillsSection />
       </div>

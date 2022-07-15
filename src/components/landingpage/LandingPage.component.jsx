@@ -4,6 +4,7 @@ import "./landingpage.styles.scss";
 const LandingPage = () => {
   return (
     <div className="page-container">
+      <div id="landingpage-top"></div>
       <div className="content-container">
         <p className="intro-name">
           👋 Hi I'm <span className="color-primary">Andy</span>

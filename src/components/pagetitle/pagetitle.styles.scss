@@ -2,14 +2,14 @@
 
 .title-container {
     height: 75px;
-    background: variables.$dark-bg-color;
+    background: variables.$primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: variables.$primary-color;
     overflow: hidden;
-    border-top: 0.1rem solid white;
-    border-bottom: 0.1rem solid white;
+    border-top: 0.1rem solid variables.$primary-color;
+    border-bottom: 0.1rem solid variables.$primary-color;
 }
 
 @media screen and (min-width: 768px) {

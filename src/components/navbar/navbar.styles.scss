@@ -2,7 +2,7 @@
 
 nav {
     display: flex;
-    background: white;
+    background: variables.$primary-color;
     justify-content: space-between;
     align-items: center;
     height: max(10vh, 60px);
@@ -10,14 +10,14 @@ nav {
     top: 0;
     left: 0;
     z-index: 3;
-    border-bottom: 0.1rem solid #9646fa;
+    border-bottom: 0.1rem solid variables.$secondary-color;
     ul {
         display: flex;
         list-style-type: none;
         align-items: center;
 
         li:first-child {
-            border-right: 0.05rem solid white;
+            border-right: 0.05rem solid variables.$primary-color;
         }
 
         li {
@@ -27,15 +27,16 @@ nav {
 
         a {
             text-decoration: none;
-            color: #9646fa;
+            color: variables.$secondary-color;
         }
     }
 }
 
 .home-link {
+    cursor: pointer;
     width: 20%;
     padding: 0.5rem;
-    color: #9646fa;
+    color: variables.$secondary-color;
     margin-right: auto;
     font-size: 1.2rem;
 }
@@ -48,7 +49,7 @@ nav {
 
 @keyframes hoverBlack {
     from {
-        color: variables.$orange-color;
+        color: variables.$secondary-color;
     }
 
     to {
