@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { v4 as uuidv4 } from "uuid";
 import "./project.styles.scss";
-import ProjectModal from "./ProjectModal";
+import ProjectModal from "../modal/ProjectModal";
 
 const Project = ({ info }) => {
   const { mainImage, mobileImage, title, about, website, github, technologies } = info;

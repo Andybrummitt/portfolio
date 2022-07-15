@@ -1,0 +1,118 @@
+//  --------------------------  MODAL --------------------------
+
+.project-modal {
+    z-index: 100;
+    background: #f0f0f0;
+    font-size: 0.8rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: 95vw;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+}
+
+.modal-content-container {
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem;
+    position: relative;
+    z-index: 100;
+    border: 0.2rem solid black;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        color: white;
+    }
+
+    .technologies-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.5rem auto;
+        li {
+            margin: 0.125rem;
+            border: 0.1rem solid #22262a;
+            background: #424242;
+            list-style-type: none;
+            color: white;
+            padding: 0.125rem;
+        }
+    }
+
+    p {
+        color: #22262a;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.125rem;
+    }
+
+    .modal-upper-section {
+        display: flex;
+        background: #5C1EA8;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    .modal-close-icon-wrapper {
+        padding: 0.25rem;
+        margin-left: auto;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F5D45D;
+        right: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .project-links-container {
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0.5rem 1rem;
+            padding: 0.3rem;
+            background: #22262a;
+            border: none;
+            a {
+                font-size: 1.1rem;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+// --------------------------   MODAL OVERLAY   --------------------------
+
+.overlay-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-height: 500px) {
+    .project-modal {
+        max-height: 300px;
+    }
+}
