@@ -4,37 +4,51 @@
     background: variables.$dark-bg-color;
     min-height: 90vh;
     overflow: hidden;
+    position: relative;
+    .custom-shape-divider-top-1657842708 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1657842708 svg {
+        position: relative;
+        display: block;
+        width: calc(118% + 1.3px);
+        height: 88px;
+    }
+    
+    .custom-shape-divider-top-1657842708 .shape-fill {
+        fill: #9646FA;
+    }
 }
+
 
 .sections-container {
     min-height: calc(90vh - 75px);
-    
     height: fit-content;
     overflow: hidden;
-    background: url('../../images/layered-waves-svg-about-me.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 200% auto;
     display: flex;
     flex-direction: column;
+    h1 {
+        margin-top: 5rem;
+        text-align: center;
+    }
 }
 
 .animation-ref-container, .skills-ref-container {
     flex: 1 1 0;
-    margin-top: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow: hidden;
-
-    section {
-        color: white;
-    }
 }
 
 .intro-section {
     padding: 1rem;
-    margin: 2rem 0 0 0;
     width: 100%;
 
     h2 {

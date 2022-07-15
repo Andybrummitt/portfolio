@@ -22,7 +22,7 @@ const AboutMeSection = () => {
     <div className="animation-ref-container" ref={ref}>
       <motion.section className="intro-section" animate={controls}>
         <h2>Introduction</h2>
-        <h4 className="orange-bold">Who am I?</h4>
+        <h4 className="color-primary">Who am I?</h4>
         <p>
           I'm a web developer specialising in the MERN Stack who has a passion
           for creating clean looking websites and functional web apps to provide
@@ -31,7 +31,7 @@ const AboutMeSection = () => {
 
         <br />
         <br />
-        <h4 className="orange-bold">My Goals</h4>
+        <h4 className="color-primary">My Goals</h4>
         <p>
           My short term goals are to learn NextJS and GraphQL and develop a
           social media application with the technologies.

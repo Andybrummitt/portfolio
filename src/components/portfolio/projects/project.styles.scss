@@ -1,24 +1,132 @@
 @use "../../../styles/variables";
 
-.project-container {
-    position: relative;
-    display: inline-block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    img {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        width: 90%;
-        height: auto;
-    }
-    // overflow: hidden;
-}
-
 .project-ref-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .project-container {
+        margin: 1rem auto;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        .project-title-wrapper {
+            color: white;
+            letter-spacing: 0.1rem;
+            font-size: 1.2rem;
+            background: #5c5c5c;
+            padding: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            height: auto;
+            width: 100%;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            font-size: 1rem;
+            color: white;
+            border: none;
+            background: transparent;
+            text-decoration: none;
+        }
+    }
+}
+
+.project-modal {
+    z-index: 1000;
+    background: variables.$orange-color;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 95vw;
+}
+
+.modal-content-container {
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem;
+    position: relative;
+    overflow: scroll;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        color: white;
+        background: black;
+    }
+
+    .technologies-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.5rem auto;
+        li {
+            margin: 0.125rem;
+            border: 0.1rem solid #22262a;
+            list-style-type: none;
+            color: white;
+            padding: 0.125rem;
+        }
+    }
+
+    p {
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .modal-upper-section {
+        display: flex;
+        background: black;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    .modal-close-icon-wrapper {
+        padding: 0.25rem;
+        margin-left: auto;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: red;
+        right: 0;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    .project-links-container {
+        display: flex;
+        justify-content: center;
+        button {
+            margin: 0.5rem 1rem;
+            padding: 0.25rem;
+            background: hsla(0,0%,100%,.8);
+            border: none;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
 }

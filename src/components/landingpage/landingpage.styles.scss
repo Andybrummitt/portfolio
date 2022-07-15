@@ -19,33 +19,52 @@
     }  
 }
 
+.custom-shape-divider-bottom-1657840038 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1657840038 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1657840038 .shape-fill {
+    fill: #9646fa;
+}
 .content-container {
     width: 100%;
     min-height: 100%;
-    background: url("../../images/layered-waves-haikei.svg");
+    background: variables.$dark-bg-color;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 200% auto;
     margin-top: 3rem;
     
-    
     .intro-name {
         text-align: center;
         font-size: 2rem;
         margin: 1rem;
+        letter-spacing: 0.1rem;
     }
 
     p {
-        color: white;
+        color: black;
         font-size: 1rem;
         text-align: center;
     }
 }
 
 
-.orange-bold {
+.color-primary {
     color: variables.$orange-color;
-    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
