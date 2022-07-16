@@ -1,11 +1,11 @@
 import bootstrap from "../../images/logo-images/bootstrap.png";
 import css from "../../images/logo-images/css.png";
+import express from "../../images/logo-images/express.png";
 import html from "../../images/logo-images/html.png";
 import js from "../../images/logo-images/js.png";
 import node from "../../images/logo-images/node.png";
 import react from "../../images/logo-images/react.png";
 import sass from "../../images/logo-images/sass.png";
-import express from "../../images/logo-images/express.png";
 import Skill from "./Skill";
 
 const SkillsSection = () => {

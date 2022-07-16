@@ -1,10 +1,6 @@
-import battleshipMobile from "../../../images/project-images/battleship-game-mobile.png";
 import battleship from "../../../images/project-images/battleship-game.png";
-import chattyMobile from "../../../images/project-images/chatty-mobile.png";
 import chatty from "../../../images/project-images/chatty.png";
-import mixinMobile from "../../../images/project-images/mixin-mobile.png";
 import mixin from "../../../images/project-images/mixin.png";
-import tagMyTunesMobile from "../../../images/project-images/tag-my-tunes-mobile.png";
 import tagMyTunes from "../../../images/project-images/tag-my-tunes.png";
 
 const projectObjs = [
@@ -17,7 +13,6 @@ const projectObjs = [
     website: "https://mixinapp.herokuapp.com/",
     github: "https://github.com/Andybrummitt/cocktailapp",
     mainImage: mixin,
-    mobileImage: mixinMobile,
   },
   {
     key: 2,
@@ -36,7 +31,6 @@ const projectObjs = [
     website: "https://tagmytunes.herokuapp.com/",
     github: null,
     mainImage: tagMyTunes,
-    mobileImage: tagMyTunesMobile,
   },
   {
     key: 3,
@@ -47,7 +41,6 @@ const projectObjs = [
     website: "https://battleshipjsgame.herokuapp.com/",
     github: "https://github.com/Andybrummitt/battleship",
     mainImage: battleship,
-    mobileImage: battleshipMobile,
   },
   {
     key: 4,
@@ -58,7 +51,6 @@ const projectObjs = [
     github: "https://github.com/Andybrummitt/chatApp",
     website: null,
     mainImage: chatty,
-    mobileImage: chattyMobile,
   },
 ];
 

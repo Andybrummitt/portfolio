@@ -6,7 +6,8 @@ import { v4 as uuidv4 } from "uuid";
 import "./modal.styles.scss";
 
 const ProjectModal = ({ projectInfo, showModal, setShowModal }) => {
-  const { mainImage, title, about, website, github, technologies } = projectInfo;
+  const { mainImage, title, about, website, github, technologies } =
+    projectInfo;
 
   return createPortal(
     <>
@@ -21,12 +22,11 @@ const ProjectModal = ({ projectInfo, showModal, setShowModal }) => {
             <div className="modal-content-container">
               <section className="modal-upper-section">
                 <h5>{title}</h5>
-                <div className="modal-close-icon-wrapper">
-                  <FontAwesomeIcon
-                    icon={faXmark}
-                    onClick={() => setShowModal(false)}
-                    className="modal-close-btn"
-                  />
+                <div
+                  className="modal-close-icon-wrapper"
+                  onClick={() => setShowModal(false)}
+                >
+                  <FontAwesomeIcon icon={faXmark} className="modal-close-btn" />
                 </div>
               </section>
               <ul className="technologies-list">

@@ -5,14 +5,8 @@ import "./navbar.styles.scss";
 
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { useEffect } from "react";
-
 
 const Navbar = () => {
-
-  useEffect(() => {
-    console.log(window.location.pathname === "/")
-  })
   return (
     <nav className="main-nav">
       <div className="home-link">

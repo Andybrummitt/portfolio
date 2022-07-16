@@ -3,7 +3,6 @@
 .page-container {
     min-height: 90vh;
     background: variables.$primary-color;
-    display: flex;
     overflow: hidden;
     position: relative;
 }
@@ -20,34 +19,10 @@
     }  
 }
 
-.custom-shape-divider-bottom-1657840038 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1657840038 svg {
-    position: relative;
-    display: block;
-    width: calc(118% + 1.3px);
-    height: 90px;
-}
-
-.custom-shape-divider-bottom-1657840038 .shape-fill {
-    fill: variables.$secondary-color;
-}
 .content-container {
     width: 100%;
-    min-height: 100%;
-    background: variables.$primary-color;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 200% auto;
-    margin-top: 3rem;
+    padding: 0.5rem;
+    margin-top: 7rem;
     
     .intro-name {
         text-align: center;
@@ -76,6 +51,36 @@
     width: 1px;
 }
 
+.top-landing-page-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+//  --------------------------  BOTTOM SVG  ---------------------- //
+
+.custom-shape-divider-bottom-1657840038 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1657840038 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1657840038 .shape-fill {
+    fill: variables.$secondary-color;
+}
+
 @media screen and (min-width: 768px) {
 
     .buttons-container {
@@ -88,7 +93,7 @@
     }
 
     .content-container {
-        margin-top: 5rem;
+        margin-top: 10rem;
 
         .intro-name {
             font-size: 3.5rem;
