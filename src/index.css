@@ -11,3 +11,7 @@
 .hide {
     display: none;
 }
+
+svg {
+    pointer-events: none;
+}
