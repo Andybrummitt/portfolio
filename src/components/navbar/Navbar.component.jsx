@@ -30,8 +30,10 @@ const Navbar = () => {
       </div>
 
       <ul className="info-links">
-        <li id="contact-link">
-          <a href="/contact">Contact</a>
+        <li>
+          <RouterLink to="/contact" id="contact-link">
+            Contact
+          </RouterLink>
         </li>
         <li>
           <a
