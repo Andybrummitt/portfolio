@@ -3,14 +3,15 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navbar.styles.scss";
 
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
+  const location = useLocation();
   return (
     <nav className="main-nav">
       <div className="home-link">
-        {window.location.pathname === "/" ? (
+        {location.pathname === "/" ? (
           <ScrollLink
             to={"landingpage-top"}
             offset={-100}
