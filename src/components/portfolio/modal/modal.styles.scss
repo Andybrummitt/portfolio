@@ -13,7 +13,7 @@
     bottom: auto;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    height: fit-content;
+    min-height: fit-content;
     width: 95vw;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
