@@ -5,6 +5,7 @@ import "./navbar.styles.scss";
 
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import cv from '../../images/CV.pdf'
 
 const Navbar = () => {
   const location = useLocation();
@@ -34,6 +35,11 @@ const Navbar = () => {
           <RouterLink to="/contact" id="contact-link">
             Contact
           </RouterLink>
+        </li>
+        <li>
+          <a target="_blank" href={cv}>
+            CV
+          </a>
         </li>
         <li>
           <a
