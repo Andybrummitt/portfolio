@@ -16,16 +16,18 @@ nav {
         list-style-type: none;
         align-items: center;
 
-        li:first-child {
+        li:first-child a {
             border-right: 0.05rem solid variables.$primary-color;
         }
-
+        
         li {
-            padding: 0.4rem;
             font-size: 1.2rem;
         }
-
-        a {
+        
+        li a {
+            display: inline-block;
+            max-height: 100%;
+            padding: 0.4rem;
             text-decoration: none;
             color: variables.$primary-color;
         }
@@ -63,8 +65,10 @@ nav {
     nav {
         ul {
             li {
-                padding: 0.8rem;
                 font-size: 1.5rem; 
+            }
+            li a {
+                padding: 0.8rem;
             }
         }
 
@@ -80,8 +84,11 @@ nav {
     nav {
         ul {
             li {
-                padding: 1.2rem;
+                
                 font-size: 2rem; 
+            }
+            li a {
+                padding: 1.2rem;
             }
         }
 

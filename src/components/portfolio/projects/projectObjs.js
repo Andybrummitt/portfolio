@@ -7,19 +7,39 @@ const projectObjs = [
   {
     key: 1,
     title: "Mixin",
-    technologies: ["HTML", "CSS", "Javascript", "Node", "Express"],
+    technologies: ["HTML", "CSS/SCSS", "Javascript", "Node", "Express"],
     about:
-      "This app is a single page application that gives users information about cocktail ingredients and recipes. The user can input ingredients and see cocktails that they can make or ingredients that they need. They can search specific cocktails by ingredient or name and more. The app uses the cocktailDB API where the client makes calls to the express server which calls the cocktailDB REST API which in turn returns the data to the client through the server. I wanted to build a SPA with vanilla javascript to learn more about how React and React Router works under the hood.",
+      "Mixin is a cocktail recipe web app that utilises the cocktailDB REST API to offer the user a seamless experience searching for cocktails that they can make. For this project, I wanted to build a SPA with vanilla javascript to learn more about how React and React Router works under the hood.",
     website: "https://mixinapp.herokuapp.com/",
     github: "https://github.com/Andybrummitt/cocktailapp",
     mainImage: mixin,
   },
   {
     key: 2,
+    title: "Chatty",
+    technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Redux", "Firebase"],
+    about:
+      "This app is a serverless chat app similar to facebook messenger. The user can authenticate with google or sign up with their own email and password and can search for users by username to chat to. To test this application you can use any login details as long as the email format is accepted. I've created a couple of users that you can search for to use the application (the usernames are test1 and test2).",
+    github: "https://github.com/Andybrummitt/chatApp",
+    website: "https://chattyapplication.netlify.app/",
+    mainImage: chatty,
+  },
+  {
+    key: 3,
+    title: "Battleship Game",
+    technologies: ["HTML", "CSS/SCSS", "Javascript", "Webpack", "Node", "Express"],
+    about:
+      "This project is essentially a web based version of the popular board game, Battleship, with a graphical user interface. Users can battle against a bot that has been programmed to guess random tiles until it hits a ship tile, in which case it will guess tiles around the ship tile.",
+    website: "https://battleshipjsgame.herokuapp.com/",
+    github: "https://github.com/Andybrummitt/battleship",
+    mainImage: battleship,
+  },
+  {
+    key: 4,
     title: "Tag My Tunes",
     technologies: [
       "HTML",
-      "CSS",
+      "CSS/SCSS",
       "Bootstrap",
       "Javascript",
       "React",
@@ -31,26 +51,6 @@ const projectObjs = [
     website: "https://tagmytunes.herokuapp.com/",
     github: null,
     mainImage: tagMyTunes,
-  },
-  {
-    key: 3,
-    title: "Battleship Game",
-    technologies: ["HTML", "CSS", "Javascript", "Webpack", "Node", "Express"],
-    about:
-      "This project is a single player battleship game where the user can play against a bot. The user places their ships on selected tiles (made with an html table element) and can guess which tiles the bot has chosen. The bot then has their turn and so on.",
-    website: "https://battleshipjsgame.herokuapp.com/",
-    github: "https://github.com/Andybrummitt/battleship",
-    mainImage: battleship,
-  },
-  {
-    key: 4,
-    title: "Chatty",
-    technologies: ["HTML", "CSS", "Javascript", "React", "Firebase"],
-    about:
-      "This app is a serverless chat app similar to facebook messenger. The user can authenticate with google or sign in with their own email and password and can search for users by username to chat to.",
-    github: "https://github.com/Andybrummitt/chatApp",
-    website: null,
-    mainImage: chatty,
   },
 ];
 

@@ -9,7 +9,7 @@ const Portfolio = () => {
       <div className="portfolio-content-container">
         <h1 id="portfolio-title">Projects</h1>
         <p>
-          The projects are hosted on heroku so may take a few seconds to load.
+          Some of the projects are hosted on heroku so may take a few seconds to load.
         </p>
         <br />
         <p>Click on each project to view.</p>

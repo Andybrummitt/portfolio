@@ -1,5 +1,6 @@
 import Button from "../button/Button.component";
 import "./landingpage.styles.scss";
+import waveEmoji from "../../images/wave-emoji.png"
 
 const LandingPage = () => {
   return (
@@ -7,7 +8,7 @@ const LandingPage = () => {
       <div id="landingpage-top"></div>
       <div className="content-container">
         <p className="intro-name">
-          👋 Hi I'm <span className="color-secondary">Andy</span>
+          <img src={waveEmoji} alt="wave-emoji"/> Hi I'm <span className="color-secondary">Andy</span>
         </p>
         <p>
           A Front-end Developer proficient in <span>React</span>,{" "}
