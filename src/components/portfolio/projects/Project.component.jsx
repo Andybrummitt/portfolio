@@ -16,7 +16,6 @@ const Project = ({ info }) => {
       x: 0,
       transition: {
         duration: 0.2,
-        type: "spring",
       },
     },
   };

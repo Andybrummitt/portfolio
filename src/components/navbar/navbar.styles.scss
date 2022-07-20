@@ -46,7 +46,8 @@ nav {
 // -------------------- HOVER -------------------
 
 .home-link:hover, .info-links a:hover {
-    animation: hoverBlack 0.3s forwards;
+    color: black;
+    transition: 0.3s;
 }
 
 @keyframes hoverBlack {
@@ -56,6 +57,14 @@ nav {
 
     to {
         color: black;
+    }
+}
+
+// -------------------- NO HOVER (MOBILE) --------------------
+
+@media (hover: none){
+    .home-link:hover, .info-links a:hover {
+        color: variables.$primary-color;
     }
 }
 

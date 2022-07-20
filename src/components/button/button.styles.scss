@@ -57,6 +57,28 @@
     }
 }
 
+@media (hover: none){
+    .link-button:hover {
+        color: black;
+    }
+    
+    .link-button:hover:before {
+        transition: 0.5s all ease;
+        content: "";
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 1;
+    }
+    
+    .link-button a:hover {
+        svg {
+            animation: none;
+        }
+    }
+}
+
 @keyframes rotateArrowDown {
     from {
         transform: rotate(0);

@@ -76,7 +76,7 @@ const Contact = () => {
           fill="#0c46ad"
         ></path>
       </svg>
-      <div className="contact-content-container" onClick={(e)=> console.log(e.target.value)}>
+      <div className="contact-content-container">
         <h1>Contact</h1>
         <motion.form
           name="contact-form"
