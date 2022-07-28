@@ -4,34 +4,19 @@
     background: variables.$primary-color;
     overflow: hidden;
     position: relative;
-    h1 {
-        text-align: center;
-        color: black;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        border: 0.2rem solid black;
-        padding: 1rem;
-        margin-top: 5rem;
-    }
-    .custom-shape-divider-top-1657842708 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
+    min-height: 90vh;
+    color: variables.$off-white-color;
+    .title-container {
+        margin: 5rem auto;
+        width: 1300px;
+        align-self: flex-start;
+        border-bottom: 0.25rem solid variables.$secondary-color;
     }
     
-    .custom-shape-divider-top-1657842708 svg {
-        position: relative;
-        display: block;
-        width: calc(118% + 1.3px);
-        height: 88px;
-    }
-    
-    .custom-shape-divider-top-1657842708 .shape-fill {
-        fill: variables.$secondary-color;
+    .page-title {
+        justify-self: flex-start;
+        color: variables.$secondary-color;
+        margin: 2rem 0;
     }
 }
 
@@ -41,18 +26,20 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .animation-ref-container, .skills-ref-container {
     flex: 1 1 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 .intro-section {
-    padding: 1rem;
     width: 100%;
 
     h2 {
@@ -175,7 +162,6 @@
     }
 
     .sections-container {
-        padding: 0 3rem;
         background-size: 100% 70%;
     }
 

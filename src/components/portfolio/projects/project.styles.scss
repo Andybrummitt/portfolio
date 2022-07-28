@@ -1,37 +1,40 @@
 @use "../../../styles/variables";
 
 .project-ref-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .project-container {
-        max-width: 600px;
+        max-width: 620px;
         margin: 1rem auto;
         position: relative;
         text-align: center;
-        background: #3d3d3d;
         transition: transform .5s ease-out;
-        padding-bottom: 1rem;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
         cursor: pointer;
-        .project-title-wrapper {
-            color: variables.$primary-color;
-            letter-spacing: 0.1rem;
-            font-size: 1.2rem;
-            padding: 0.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: auto;
-            margin-right: auto;
+        .project-overlay {
+            height: 100%;
+            position: absolute;
+            top: 0; 
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: auto;
+            z-index: 1;
+            background:rgba(0, 0, 0, 0.65);
+        }
+        .project-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px black;
+            font-family: 'Staatliches', sans-serif;
+            letter-spacing: 0.2rem;
+            color: white;
+            z-index: 2;
         }
         img {
             height: auto;
-            width: 95%;
+            width: 100%;
             display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
         }
         button {
             font-size: 1rem;

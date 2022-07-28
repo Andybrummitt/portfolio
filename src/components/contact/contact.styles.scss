@@ -2,21 +2,23 @@
 
 .contact-page-container {
     position: relative;
-
+    background: variables.$primary-color;
     .contact-content-container {
         min-height: fit-content;
         padding: 0.5rem;
         overflow: hidden;
-        margin-top: 5rem;
-        h1 {
-            text-align: center;
-            color: black;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            border: 0.2rem solid black;
-            padding: 1rem;
-        }
+    }
+    .title-container {
+        margin: 5rem auto;
+        width: 1300px;
+        align-self: flex-start;
+        border-bottom: 0.25rem solid variables.$secondary-color;
+    }
+    
+    .page-title {
+        justify-self: flex-start;
+        color: variables.$secondary-color;
+        margin: 2rem 0;
     }
 
     form {

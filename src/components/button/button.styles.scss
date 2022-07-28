@@ -13,10 +13,12 @@
     align-items: center;
     box-shadow: none;
     background: variables.$primary-color;
+    color: variables.$secondary-color;
     cursor: pointer;
 
     a {
         padding: 0.25rem;
+        font-weight: bold;
         border: 0.2rem solid variables.$secondary-color;
         font-size: 1rem;
         height: 100%;

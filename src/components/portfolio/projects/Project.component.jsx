@@ -44,9 +44,8 @@ const Project = ({ info }) => {
         animate={controls}
         onClick={() => setShowModal(true)}
       >
-        <div className="project-title-wrapper">
-          <h4 className="project-title">{title}</h4>
-        </div>
+      <div className="project-overlay"></div>
+      <h2 className="project-title">{title}</h2>
         <img
           src={mainImage}
           alt="project-image"
