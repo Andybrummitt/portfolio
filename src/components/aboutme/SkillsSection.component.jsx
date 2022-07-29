@@ -6,6 +6,7 @@ import js from "../../images/logo-images/js.png";
 import node from "../../images/logo-images/node.png";
 import react from "../../images/logo-images/react.png";
 import sass from "../../images/logo-images/sass.png";
+import nextjs from "../../images/logo-images/nextjs.png";
 import Skill from "./Skill";
 
 const SkillsSection = () => {
@@ -22,6 +23,7 @@ const SkillsSection = () => {
           <Skill img={node} name="Node" />
           <Skill img={express} name="Express" />
           <Skill img={sass} name="SCSS" />
+          <Skill img={nextjs} name="NextJS" />
         </div>
       </section>
     </div>

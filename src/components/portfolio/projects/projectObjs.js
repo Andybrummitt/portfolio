@@ -1,11 +1,21 @@
 import battleship from "../../../images/project-images/battleship-game.png";
 import chatty from "../../../images/project-images/chatty.png";
 import mixin from "../../../images/project-images/mixin.png";
-import tagMyTunes from "../../../images/project-images/tag-my-tunes.png";
+import designMania from "../../../images/project-images/designmania.png";
 
 const projectObjs = [
   {
     key: 1,
+    title: "Designmania",
+    technologies: ["HTML", "CSS Modules", "Javascript", "React", "NextJS"],
+    about:
+      "I created this website for a client for their business. I was learning NextJS at the time and the site is a static site so I used NextJS static site generation for more performant rendering and SEO purposes .",
+    website: "https://www.designmania.co.uk/",
+    github: "https://github.com/Andybrummitt/designmania",
+    mainImage: designMania,
+  },
+  {
+    key: 2,
     title: "Mixin",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Node", "Express"],
     about:
@@ -15,7 +25,7 @@ const projectObjs = [
     mainImage: mixin,
   },
   {
-    key: 2,
+    key: 3,
     title: "Chatty",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Redux", "Firebase"],
     about:
@@ -25,7 +35,7 @@ const projectObjs = [
     mainImage: chatty,
   },
   {
-    key: 3,
+    key: 4,
     title: "Battleship Game",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Webpack", "Node", "Express"],
     about:
@@ -33,24 +43,6 @@ const projectObjs = [
     website: "https://battleshipjsgame.herokuapp.com/",
     github: "https://github.com/Andybrummitt/battleship",
     mainImage: battleship,
-  },
-  {
-    key: 4,
-    title: "Tag My Tunes",
-    technologies: [
-      "HTML",
-      "CSS/SCSS",
-      "Bootstrap",
-      "Javascript",
-      "React",
-      "Node",
-      "Express",
-    ],
-    about:
-      "My most recent project is a file ID3 tagger for mp3 files. When converting music videos to mp3s the title and artist fields are often not populated correctly. Users can upload up to 100 mp3 files and the server will populate those fields to its best guess and remove unwanted strings in the file name. The user then receives a zip file to download with the altered files. I've decided to keep the source code in a private github repository as I want to deploy this application with proper hosting.",
-    website: "https://tagmytunes.herokuapp.com/",
-    github: null,
-    mainImage: tagMyTunes,
   },
 ];
 

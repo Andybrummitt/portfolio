@@ -34,7 +34,7 @@
 }
 
 .side-nav li:nth-child(3) a{
-    background: red;
+    background: #f10c45;
 }
 
 .side-nav li a svg {
@@ -61,7 +61,7 @@
     padding-left: 30%;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1500px){
     .side-nav {
         display: block;
     }

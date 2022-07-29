@@ -34,7 +34,9 @@ const ProjectModal = ({ projectInfo, showModal, setShowModal }) => {
                   <li key={uuidv4()}>{technology}</li>
                 ))}
               </ul>
+              <a target="_blank" href={website}>
               <img src={mainImage} alt="project-image" />
+              </a>
               <div className="project-links-container">
                 {website ? (
                   <button className="website-btn">

@@ -1,7 +1,7 @@
 @use "../../styles/variables";
 
 .main-nav {
-    display: flex;
+    display: none;
     background-color: variables.$primary-color;
     justify-content: space-between;
     align-items: center;
@@ -45,9 +45,7 @@
 
 // -------------------- HOVER -------------------
 
-.home-link:hover, .info-links li:hover {
-    color: variables.$primary-color;
-}
+
 
 .info-links li:after {
     content: "";
@@ -66,6 +64,11 @@
         width: 100%;
     }
 
+    .home-link:hover {
+        color: white;
+        transition: .3s ease;
+    }
+
 }
 
 // -------------------- NO HOVER (MOBILE) --------------------
@@ -76,6 +79,7 @@
 
 @media screen and(min-width: 768px){
     .main-nav {
+        display: flex;
         ul {
             li {
                 font-size: 1.5rem; 
@@ -95,18 +99,9 @@
 
 @media screen and(min-width: 1270px){
     .main-nav {
-        ul {
-            li {
-                
-                font-size: 1.5rem; 
-            }
-            li a {
-                padding: 1.2rem;
-            }
-        }
 
-        .home-link, .info-links li, #contact-link {
-            font-size: 1.5rem;
+        .home-link {
+            font-size: 1.75rem;
         }
 
     }

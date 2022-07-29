@@ -4,7 +4,7 @@
 
 .project-modal {
     z-index: 100;
-    background: variables.$primary-color;
+    background: #f4f4f4;
     font-size: 0.8rem;
     position: fixed;
     top: 50%;
@@ -57,7 +57,7 @@
     }
 
     p {
-        color: variables.$off-white-color;
+        color: #22262a;
         font-family: 'Roboto', sans-serif;
         padding: 0.5rem;
     }
