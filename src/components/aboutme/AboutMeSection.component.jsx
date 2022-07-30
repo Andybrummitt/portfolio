@@ -14,8 +14,8 @@ const AboutMeSection = () => {
         <br />
         <h4 className="color-secondary">My Goals</h4>
         <p>
-          My short term goals are to learn NextJS and GraphQL and develop a
-          social media application with the technologies.
+          My short term goal is to learn GraphQL and develop a
+          social media application with the technology.
           <br />
           <br />
           In the future I hope to expand my skillset to mobile development and

@@ -51,9 +51,16 @@
 @media screen and (min-width: 1500px){
     .projects-list {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .projects-list .project-ref-container:nth-child(odd){
+        margin-right: 2.5rem;
+    }
+    .projects-list .project-ref-container:nth-child(5){
+        margin-right: 0;
     }
 }
 

@@ -2,6 +2,7 @@ import battleship from "../../../images/project-images/battleship-game.png";
 import chatty from "../../../images/project-images/chatty.png";
 import mixin from "../../../images/project-images/mixin.png";
 import designMania from "../../../images/project-images/designmania.png";
+import tagMyTunes from "../../../images/project-images/tag-my-tunes.png"
 
 const projectObjs = [
   {
@@ -16,6 +17,15 @@ const projectObjs = [
   },
   {
     key: 2,
+    title: "Tag My Tunes",
+    technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Bootstrap", "Node", "Express"],
+    about: "This application is a file ID3 tag tagger. When converting videos to mp3s from popular mp3 conversion websites the files' ID3 tags i.e 'title' and 'artist' are usually not populated correctly, this application solves this issue. Users can upload up to 100 mp3 files and the algorithm will populate these tags to the best of its ability and remove any unwanted strings from the file that the user can choose.",
+    website: "https://tagmytunes.herokuapp.com/",
+    github: "https://github.com/Andybrummitt/tagmytunes2.0",
+    mainImage: tagMyTunes
+  },
+  {
+    key: 3,
     title: "Mixin",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Node", "Express"],
     about:
@@ -25,7 +35,7 @@ const projectObjs = [
     mainImage: mixin,
   },
   {
-    key: 3,
+    key: 4,
     title: "Chatty",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Redux", "Firebase"],
     about:
@@ -35,7 +45,7 @@ const projectObjs = [
     mainImage: chatty,
   },
   {
-    key: 4,
+    key: 5,
     title: "Battleship Game",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Webpack", "Node", "Express"],
     about:
