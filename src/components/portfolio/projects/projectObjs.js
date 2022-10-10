@@ -2,30 +2,40 @@ import battleship from "../../../images/project-images/battleship-game.png";
 import chatty from "../../../images/project-images/chatty.png";
 import mixin from "../../../images/project-images/mixin.png";
 import designMania from "../../../images/project-images/designmania.png";
-import tagMyTunes from "../../../images/project-images/tag-my-tunes.png"
+import bugTracker from "../../../images/project-images/bug-tracker.png"
 
 const projectObjs = [
   {
     key: 1,
+    title: "Bug Tracker",
+    technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Bootstrap", "Node", "Express", "MongoDB"],
+    about: "This application is built with the MERN stack and aids development teams in organising bug and feature tickets within their projects. It utilises JWT authentication with access and refresh tokens with seperate team and user login portals and a MongoDB database on the backend to handle CRUD operations. When authenticated users can create projects and tickets which allows teams to track and organise project development.",
+    website: "https://andys-bug-tracker.herokuapp.com/",
+    github: "https://github.com/Andybrummitt/bug-tracker",
+    mainImage: bugTracker
+  },
+  {
+    key: 2,
     title: "Designmania",
     technologies: ["HTML", "CSS Modules", "Javascript", "React", "NextJS"],
     about:
-      "I created this website for a client for their business. I was learning NextJS at the time and the site is a static site so I used NextJS static site generation for more performant rendering and SEO purposes .",
+      "I created this website for a client for their business. I was learning NextJS at the time and the site is a static site so I used NextJS static site generation for more performant rendering and SEO purposes.",
     website: "https://www.designmania.co.uk/",
     github: "https://github.com/Andybrummitt/designmania",
     mainImage: designMania,
   },
   {
-    key: 2,
-    title: "Tag My Tunes",
-    technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Bootstrap", "Node", "Express"],
-    about: "This application is a file ID3 tag tagger. When converting videos to mp3s from popular mp3 conversion websites the files' ID3 tags i.e 'title' and 'artist' are usually not populated correctly, this application solves this issue. Users can upload up to 100 mp3 files and the algorithm will populate these tags to the best of its ability and remove any unwanted strings from the file that the user can choose.",
-    website: "https://tagmytunes.herokuapp.com/",
-    github: "https://github.com/Andybrummitt/tagmytunes2.0",
-    mainImage: tagMyTunes
+    key: 3,
+    title: "Battleship Game",
+    technologies: ["HTML", "CSS/SCSS", "Javascript", "Webpack", "Node", "Express"],
+    about:
+      "This project is essentially a web based version of the popular board game, Battleship, with a graphical user interface. Users can battle against a bot that has been programmed to guess random tiles until it hits a ship tile, in which case it will guess tiles around the ship tile.",
+    website: "https://battleshipjsgame.herokuapp.com/",
+    github: "https://github.com/Andybrummitt/battleship",
+    mainImage: battleship,
   },
   {
-    key: 3,
+    key: 4,
     title: "Mixin",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Node", "Express"],
     about:
@@ -35,7 +45,7 @@ const projectObjs = [
     mainImage: mixin,
   },
   {
-    key: 4,
+    key: 5,
     title: "Chatty",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Redux", "Firebase"],
     about:
@@ -44,16 +54,7 @@ const projectObjs = [
     website: "https://chattyapplication.netlify.app/",
     mainImage: chatty,
   },
-  {
-    key: 5,
-    title: "Battleship Game",
-    technologies: ["HTML", "CSS/SCSS", "Javascript", "Webpack", "Node", "Express"],
-    about:
-      "This project is essentially a web based version of the popular board game, Battleship, with a graphical user interface. Users can battle against a bot that has been programmed to guess random tiles until it hits a ship tile, in which case it will guess tiles around the ship tile.",
-    website: "https://battleshipjsgame.herokuapp.com/",
-    github: "https://github.com/Andybrummitt/battleship",
-    mainImage: battleship,
-  },
+  ,
 ];
 
 export default projectObjs;

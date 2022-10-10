@@ -9,12 +9,11 @@ const AboutMeSection = () => {
           for creating clean looking websites and functional web apps to provide
           a seamless experience for the end user.
         </p>
-
         <br />
         <br />
         <h4 className="color-secondary">My Goals</h4>
         <p>
-          My short term goal is to complete my Bug Tracker MERN stack application fully equipped with JWT authentication, access and refresh tokens. Please see my <a target="_blank" href="https://github.com/Andybrummitt/bug-tracker">current progress</a> on github.  
+          My short term goal is to learn GraphQL and build a project with the technology.
           <br />
           <br />
           In the future I hope to expand my skillset to mobile development and
