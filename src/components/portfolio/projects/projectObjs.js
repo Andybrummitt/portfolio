@@ -9,7 +9,7 @@ const projectObjs = [
     key: 1,
     title: "Bug Tracker",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Bootstrap", "Node", "Express", "MongoDB"],
-    about: "This application is built with the MERN stack and aids development teams in organising bug and feature tickets within their projects. It utilises JWT authentication with access and refresh tokens with seperate team and user login portals and a MongoDB database on the backend to handle CRUD operations. When authenticated users can create projects and tickets which allows teams to track and organise project development.",
+    about: "This application is built with the MERN stack and aids development teams in organising bug and feature tickets within their projects. It utilises JWT authentication with access and refresh tokens with seperate team and user login portals and a MongoDB database on the backend to handle CRUD operations. Authenticated users can then create and monitor tickets which allows teams to track and organise project development.",
     website: "https://andys-bug-tracker.herokuapp.com/",
     github: "https://github.com/Andybrummitt/bug-tracker",
     mainImage: bugTracker
