@@ -14,7 +14,7 @@ const projectObjs = [
       "Typescript",
       "React",
       "NextJS",
-      "Firebase",
+      "Supabase",
     ],
     about:
       "This is a cryptocurrency application built in Typescript, NextJS and styled with the styled components library. The application accesses Crypto market and token data with the free coingecko API and utilises Supabase for authentication and database queries.",
