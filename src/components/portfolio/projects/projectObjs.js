@@ -1,21 +1,49 @@
 import battleship from "../../../images/project-images/battleship-game.png";
-import chatty from "../../../images/project-images/chatty.png";
-import mixin from "../../../images/project-images/mixin.png";
+import bugTracker from "../../../images/project-images/bug-tracker.png";
+import cryptoCompare from "../../../images/project-images/crypto-compare.png";
 import designMania from "../../../images/project-images/designmania.png";
-import bugTracker from "../../../images/project-images/bug-tracker.png"
+import mixin from "../../../images/project-images/mixin.png";
 
 const projectObjs = [
   {
     key: 1,
-    title: "Bug Tracker",
-    technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Bootstrap", "Node", "Express", "MongoDB"],
-    about: "This application is built with the MERN stack and aids development teams in organising bug and feature tickets within their projects. It utilises JWT authentication with access and refresh tokens with seperate team and user login portals and a MongoDB database on the backend to handle CRUD operations. Authenticated users can then create and monitor tickets which allows teams to track and organise project development.",
-    website: "https://andys-bug-tracker.herokuapp.com/",
-    github: "https://github.com/Andybrummitt/bug-tracker",
-    mainImage: bugTracker
+    title: "Crypto Compare",
+    technologies: [
+      "HTML",
+      "Styled Components",
+      "Typescript",
+      "React",
+      "NextJS",
+      "Firebase",
+    ],
+    about:
+      "This is a cryptocurrency application built in Typescript, NextJS and styled with the styled components library. The application accesses Crypto market and token data with the free coingecko API and utilises Supabase for authentication and database queries.",
+    github: "https://github.com/Andybrummitt/crypto-compare",
+    website: "https://crypto-compare-one.vercel.app/",
+    mainImage: cryptoCompare,
   },
   {
     key: 2,
+    title: "Bug Tracker",
+    technologies: [
+      "HTML",
+      "CSS/SCSS",
+      "Javascript",
+      "React",
+      "Bootstrap",
+      "Node",
+      "Express",
+      "MongoDB",
+    ],
+    about:
+      "This application is built with the MERN stack and aids development teams in organising bug and feature tickets within their projects. It utilises JWT authentication with access and refresh tokens with seperate team and user login portals and a MongoDB database on the backend to handle CRUD operations. Authenticated users can then create and monitor tickets which allows teams to track and organise project development.",
+    website: "https://andys-bug-tracker.herokuapp.com/",
+    github: "https://github.com/Andybrummitt/bug-tracker",
+    mainImage: bugTracker,
+  },
+
+  {
+    key: 3,
     title: "Designmania",
     technologies: ["HTML", "CSS Modules", "Javascript", "React", "NextJS"],
     about:
@@ -25,9 +53,16 @@ const projectObjs = [
     mainImage: designMania,
   },
   {
-    key: 3,
+    key: 4,
     title: "Battleship Game",
-    technologies: ["HTML", "CSS/SCSS", "Javascript", "Webpack", "Node", "Express"],
+    technologies: [
+      "HTML",
+      "CSS/SCSS",
+      "Javascript",
+      "Webpack",
+      "Node",
+      "Express",
+    ],
     about:
       "This project is essentially a web based version of the popular board game, Battleship, with a graphical user interface. Users can battle against a bot that has been programmed to guess random tiles until it hits a ship tile, in which case it will guess tiles around the ship tile.",
     website: "https://battleshipjsgame.herokuapp.com/",
@@ -35,7 +70,7 @@ const projectObjs = [
     mainImage: battleship,
   },
   {
-    key: 4,
+    key: 5,
     title: "Mixin",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Node", "Express"],
     about:
@@ -44,17 +79,6 @@ const projectObjs = [
     github: "https://github.com/Andybrummitt/cocktailapp",
     mainImage: mixin,
   },
-  {
-    key: 5,
-    title: "Chatty",
-    technologies: ["HTML", "CSS/SCSS", "Javascript", "React", "Redux", "Firebase"],
-    about:
-      "This app is a serverless chat app similar to facebook messenger. The user can authenticate with google or sign up with their own email and password and can search for users by username to chat to. To test this application you can use any login details as long as the email format is accepted. I've created a couple of users that you can search for to use the application (the usernames are test1 and test2).",
-    github: "https://github.com/Andybrummitt/chatApp",
-    website: "https://chattyapplication.netlify.app/",
-    mainImage: chatty,
-  },
-  ,
 ];
 
 export default projectObjs;
