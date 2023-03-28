@@ -1,9 +1,11 @@
-const Skill = ({ name, img }) => {
+const Skill = ({ image, alt }) => {
   return (
-    <div className="skill-container">
-      <img src={img} alt={name} />
-      <span>{name}</span>
-    </div>
+    <li className="skill-container">
+      <div>
+        <img src={image} alt={alt} />
+        <p>{alt}</p>
+      </div>
+    </li>
   );
 };
 

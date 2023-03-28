@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import cv from "../../images/CV.pdf";
 import "./mobileNav.styles.scss";
+import logo from "../../images/logo.png";
 
 const MobileNav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,7 +20,7 @@ const MobileNav = () => {
           smooth={true}
           duration={500}
         >
-          <FontAwesomeIcon icon={faHouse} />
+          <img src={logo} alt="logo" />
         </ScrollLink>
       </div>
       <FontAwesomeIcon

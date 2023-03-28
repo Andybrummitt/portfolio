@@ -1,26 +1,21 @@
 const AboutMeSection = () => {
   return (
-    <div className="animation-ref-container">
-      <section className="intro-section">
-        <h2 className="color-secondary">Introduction</h2>
-        <h4 className="color-secondary">Who am I?</h4>
+    <section className="animation-ref-container about-me-text">
         <p>
-          I'm a web developer specialising in the MERN Stack who has a passion
-          for creating clean looking websites and functional web apps to provide
-          a seamless experience for the end user.
-        </p>
-        <br />
-        <br />
-        <h4 className="color-secondary">My Goals</h4>
-        <p>
-          My short term goal is to learn GraphQL and build a project with the technology.
+          I’m an Essex based <span>self-taught developer</span> who enjoys
+          making <span>aesthetic</span>, performant and useful applications that{" "}
+          <span>solve real problems for the end user.</span>
           <br />
           <br />
-          In the future I hope to expand my skillset to mobile development and
-          build applications with React Native.
+          I’m primarily a front-end specialist and{" "}
+          <span>love creating dynamic user interfaces</span> but enjoy the
+          learning the full stack.
+          <br />
+          <br />
+          <span>My goal</span> is to be become a jack of all trades but a{" "}
+          front-end wizard.
         </p>
-      </section>
-    </div>
+    </section>
   );
 };
 

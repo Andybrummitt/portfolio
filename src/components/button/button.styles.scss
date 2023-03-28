@@ -1,89 +1,85 @@
 @use "../../styles/variables";
 
 .link-button {
-    position: relative;
-    border: none;
-    width: fit-content;
-    z-index: 1;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: none;
-    background: variables.$primary-color;
-    color: variables.$secondary-color;
-    cursor: pointer;
+  position: relative;
+  border: none;
+  width: fit-content;
+  z-index: 1;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none;
+  background: transparent;
+  color: variables.$secondary-color;
+  cursor: pointer;
 
-    a {
-        padding: 0.5rem;
-        font-weight: bold;
-        border: 0.2rem solid variables.$secondary-color;
-        font-size: 1.3rem;
-        height: 100%;
-        width: 100%;
-    }
-    span {
-        margin-right: 0.5rem;
-    }
+  a {
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 0.2rem solid variables.$secondary-color;
+    font-size: 1.3rem;
+    height: 100%;
+    width: 100%;
+  }
+  span {
+    margin-right: 0.5rem;
+  }
 }
 
 .link-button:before {
-    transition: 0.5s all ease;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: variables.$secondary-color;
+  transition: 0.5s all ease;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: variables.$secondary-color;
 }
 
 @keyframes rotateArrowDown {
-    from {
-        transform: rotate(0);
-    }
+  from {
+    transform: rotate(0);
+  }
 
-    to {
-        transform: rotate(90deg);
-    }
+  to {
+    transform: rotate(90deg);
+  }
 }
 
-@media (hover: hover){
+@media (hover: hover) {
+  .link-button:hover {
+    color: variables.$bg-color-darkest;
+  }
 
-    .link-button:hover {
-        color: variables.$primary-color;
+  .link-button:hover {
+    svg {
+      animation: rotateArrowDown 0.2s forwards ease;
     }
+  }
 
-
-    .link-button:hover {
-        svg {
-            animation: rotateArrowDown 0.2s forwards ease;
-        }
-    }
-    
-    .link-button:hover:before {
-        transition: 0.5s all ease;
-        opacity: 1;
-        transform: scaleX(1);
-    }
-
+  .link-button:hover:before {
+    transition: 0.5s all ease;
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
-
-
 
 @media screen and (min-width: 768px) {
-    .link-button a {
-        padding: 0.75rem;
-        font-size: 1.5rem;
-    }
+  .link-button a {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .link-button a, .link-button svg {
-        font-size: 1.8rem;
-    }
+  .link-button a,
+  .link-button svg {
+    font-size: 1.8rem;
+  }
 }

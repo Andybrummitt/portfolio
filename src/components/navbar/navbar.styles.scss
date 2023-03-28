@@ -1,108 +1,105 @@
 @use "../../styles/variables";
 
-.main-nav {
-    display: none;
-    background-color: variables.$primary-color;
+.nav-container {
+  width: 100%;
+  display: none;
+  height: max(10vh, 3.75rem);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: variables.$bg-color-darkest;
+  .main-nav {
+    width: 100%;
+    background-color: transparent;
+    max-width: 81.25rem;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
     align-items: center;
-    height: max(10vh, 60px);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    border-bottom: 0.1rem solid variables.$secondary-color;
-    ul {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
-        
-        li {
-            font-size: 1.2rem;
-            position: relative;
-            margin: 0 1.5rem;
-        }
-        
-        li a {
-            display: inline-block;
-            cursor: pointer;
-            padding: 0.4rem;
-            text-decoration: none;
-            color: variables.$secondary-color;
-            white-space: nowrap;
-            height: 100%;
-        }
+    display: flex;
+    .logo {
+      flex: 1;
+      cursor: pointer;
+      padding: 0.5rem;
+      margin-right: auto;
+      font-size: 2rem;
+      img {
+        height: 5rem;
+        width: auto;
+      }    
     }
+    ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      flex: 2;
+      justify-content: space-between;
+
+      li {
+        font-size: 1.5rem;
+        position: relative;
+        margin: 0 1.5rem;
+      }
+
+      li a {
+        display: inline-block;
+        cursor: pointer;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .home-link {
-    cursor: pointer;
-    width: 20%;
-    padding: 0.5rem;
-    color: variables.$secondary-color;
-    margin-right: auto;
-    font-size: 1.2rem;
+  
 }
 
 // -------------------- HOVER -------------------
 
 
+@media (hover: hover) {
+  .info-links li:hover:after {
+    width: 100%;
+  }
 
-.info-links li:after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 0.15rem;
-    width: 0;
-    left: 0;
-    bottom: 0;
-    transition: 0.3s;
-}
-
-@media (hover: hover){
-
-    .info-links li:hover:after {
-        width: 100%;
-    }
-
-    .home-link:hover {
-        color: white;
-        transition: .3s ease;
-    }
-
+  .home-link:hover {
+    color: white;
+    transition: 0.3s ease;
+  }
 }
 
 // -------------------- NO HOVER (MOBILE) --------------------
 
-
-
 // -------------------- MEDIA QUERIES ---------------------
 
-@media screen and(min-width: 768px){
-    .main-nav {
-        display: flex;
-        ul {
-            li {
-                font-size: 1.5rem; 
-            }
-            li a {
-                padding: 0.8rem;
-            }
-        }
-
-        .home-link {
-            font-size: 1.5rem;
-            padding: 0.8rem 1rem;
-        }
+@media screen and(min-width: 768px) {
+  .nav-container {
+    display: flex;
+    ul {
+      li {
+        font-size: 1.5rem;
+      }
+      li a {
+        padding: 0.8rem;
+      }
     }
+
+    .home-link {
+      font-size: 1.5rem;
+      padding: 0.8rem 1rem;
+    }
+  }
 }
 
-
-@media screen and(min-width: 1270px){
-    .main-nav {
-
-        .home-link {
-            font-size: 1.75rem;
-        }
-
+@media screen and(min-width: 1270px) {
+  .main-nav {
+    .home-link {
+      font-size: 1.75rem;
     }
+  }
 }

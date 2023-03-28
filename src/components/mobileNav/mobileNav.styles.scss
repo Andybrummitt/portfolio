@@ -1,74 +1,78 @@
 @use "../../styles/variables";
 
 .mobile-nav {
-    display: flex;
-    background-color: variables.$primary-color;
-    justify-content: space-between;
-    align-items: center;
-    height: max(10vh, 60px);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    border-bottom: 0.1rem solid variables.$secondary-color;
+  display: flex;
+  background-color: variables.$bg-color-darkest;
+  justify-content: space-between;
+  align-items: center;
+  height: max(10vh, 60px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  border-bottom: 0.1rem solid variables.$secondary-color;
+  img {
+    height: 4rem;
+    width: auto;
+  }
 }
 
 .mobile-info-links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-    animation: slideIn 0.3s ease;
-    overflow: scroll;
-    text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: variables.$bg-gradient-dark-to-light;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  animation: slideIn 0.3s ease;
+  overflow: scroll;
+  text-align: center;
 
-    li {
-        list-style-type: none;
-        padding: 1rem;
-        margin: 1.5rem 0;
-        width: 90vw;
-        a {
-            text-decoration: none;
-            color: black;
-            padding: 1rem;
-            width: 100%;
-        }
+  li {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    width: 90vw;
+    a {
+      text-decoration: none;
+      color: variables.$secondary-color;
+      padding: 1rem;
+      width: 100%;
     }
+  }
 
-    
-    .hb-close {
-        font-size: 2rem;
-        align-self: flex-end;
-        margin: 1.4rem 1rem 0 0;
-        cursor: pointer;
-    }
+  .hb-close {
+    font-size: 2rem;
+    align-self: flex-end;
+    margin: 1.4rem 1rem 0 0;
+    cursor: pointer;
+  }
 }
 
-@keyframes slideIn{
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0%)
-    }
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 // ---------------------    HB MENU     ----------------------------
 
 .hb {
-    color: white;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 768px){
-    .mobile-nav {
-        display: none;
-    }
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
 }

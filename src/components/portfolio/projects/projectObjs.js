@@ -25,6 +25,23 @@ const projectObjs = [
   },
   {
     key: 2,
+    title: "Tag My Tunes",
+    technologies: [
+      "HTML",
+      "Bootstrap",
+      "Javascript",
+      "React",
+      "Node",
+      "Express",
+    ],
+    about:
+      'This application is a file ID3 tag tagger. When converting videos to mp3s from popular mp3 conversion websites the files\' ID3 tags i.e "title" and "artist" are usually not populated correctly, this application solves this issue. Users can upload up to 100 mp3 files and the algorithm will populate these tags to the best of its ability and remove any unwanted strings from the file that the user can choose. This application is built with NodeJS and Express on the backend and React and bootstrap on the frontend.',
+    website: "https://tagmytunes.herokuapp.com/",
+    github: "https://github.com/Andybrummitt/tagmytunes2.0",
+    mainImage: tagMyTunes,
+  },
+  {
+    key: 3,
     title: "Bug Tracker",
     technologies: [
       "HTML",
@@ -43,35 +60,7 @@ const projectObjs = [
     mainImage: bugTracker,
   },
   {
-    key: 1,
-    title: "Tag My Tunes",
-    technologies: [
-      "HTML",
-      "Bootstrap",
-      "Javascript",
-      "React",
-      "Node",
-      "Express",
-    ],
-    about:
-      'This application is a file ID3 tag tagger. When converting videos to mp3s from popular mp3 conversion websites the files\' ID3 tags i.e "title" and "artist" are usually not populated correctly, this application solves this issue. Users can upload up to 100 mp3 files and the algorithm will populate these tags to the best of its ability and remove any unwanted strings from the file that the user can choose. This application is built with NodeJS and Express on the backend and React and bootstrap on the frontend.',
-    website: "https://tagmytunes.herokuapp.com/",
-    github: "https://github.com/Andybrummitt/tagmytunes2.0",
-    mainImage: tagMyTunes,
-  },
-
-  {
     key: 4,
-    title: "Designmania",
-    technologies: ["HTML", "CSS Modules", "Javascript", "React", "NextJS"],
-    about:
-      "I created this website for a client for their business. I was learning NextJS at the time and the site is a static site so I used NextJS static site generation for more performant rendering and SEO purposes.",
-    website: "https://www.designmania.co.uk/",
-    github: "https://github.com/Andybrummitt/designmania",
-    mainImage: designMania,
-  },
-  {
-    key: 5,
     title: "Battleship Game",
     technologies: [
       "HTML",
@@ -88,7 +77,7 @@ const projectObjs = [
     mainImage: battleship,
   },
   {
-    key: 6,
+    key: 5,
     title: "Mixin",
     technologies: ["HTML", "CSS/SCSS", "Javascript", "Node", "Express"],
     about:

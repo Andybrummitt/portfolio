@@ -1,52 +1,52 @@
 @use "../../../styles/variables";
 
 .project-ref-container {
-    .project-container {
-        max-width: 620px;
-        margin: 1rem auto;
-        position: relative;
-        text-align: center;
-        transition: transform .5s ease-out;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-        cursor: pointer;
-        .project-overlay {
-            height: 100%;
-            position: absolute;
-            top: 0; 
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: auto;
-            z-index: 1;
-            background:rgba(0, 0, 0, 0.65);
-        }
-        .project-title {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-shadow: 2px 2px black;
-            font-family: 'Staatliches', sans-serif;
-            letter-spacing: 0.2rem;
-            color: white;
-            z-index: 2;
-        }
-        img {
-            height: auto;
-            width: 100%;
-            display: inline-block;
-        }
-        button {
-            font-size: 1rem;
-            color: variables.$primary-color;
-            border: none;
-            background: transparent;
-            text-decoration: none;
-        }
+  .project-container {
+    max-width: 620px;
+    margin: 1rem auto;
+    position: relative;
+    text-align: center;
+    transition: transform 0.5s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    .project-overlay {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: auto;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.65);
     }
+    .project-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 2px 2px black;
+      font-family: "Staatliches", sans-serif;
+      letter-spacing: 0.2rem;
+      color: white;
+      z-index: 2;
+    }
+    img {
+      height: auto;
+      width: 100%;
+      display: inline-block;
+    }
+    button {
+      font-size: 1rem;
+      color: variables.$bg-color-darkest;
+      border: none;
+      background: transparent;
+      text-decoration: none;
+    }
+  }
 }
 
 .project-title {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

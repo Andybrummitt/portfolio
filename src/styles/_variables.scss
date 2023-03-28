@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
-$secondary-color: #F58153;
-$primary-color: #03072e;
-$primary-font: 'Poppins', sans-serif;
+$secondary-color: #00ccab;
+$bg-color-darkest: #0c131a;
+$bg-color-darker: #111b24;
+$bg-color-dark: #14202a;
+$bg-color-medium: #16232e;
+$bg-gradient-dark-to-light: linear-gradient(#0c131a, #111b24, #14202a, #16232e);
+$bg-gradient-light-to-dark: linear-gradient(#16232e, #14202a, #111b24, #0c131a);
+$primary-font: "Poppins", sans-serif;
 $white-color: #dbdbdb;
 $off-white-color: #cccccc;
 $red-svg-color: #c72424;
-$banner-font: 'Lexend Zetta', sans-serif;
+$banner-font: "Lexend Zetta", sans-serif;

@@ -1,69 +1,65 @@
 @use "../../styles/variables";
 
 .portfolio-container {
-    min-height: 90vh;
-    height: fit-content;
-    width: 100%;
-    background: variables.$primary-color;
-    overflow: hidden;
+  min-height: 90vh;
+  height: fit-content;
+  width: 100%;
+  background: variables.$bg-color-darkest;
+  overflow: hidden;
 }
 
 .portfolio-content-container {
-    min-height: calc(100% - 75px);
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1300px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
+  min-height: calc(100% - 75px);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: variables.$secondary-color;
+
+  p {
+    text-align: center;
+    margin: 1rem 0;
+    color: variables.$off-white-color;
+  }
+
+  .title-container {
+    margin: 0 0 2rem 0;
+    width: 1300px;
+    align-self: flex-start;
+    border-bottom: 0.25rem solid variables.$secondary-color;
+  }
+
+  #portfolio-title {
+    justify-self: flex-start;
     color: variables.$secondary-color;
-
-    p {
-        text-align: center;
-        margin: 1rem 0;
-        color: variables.$off-white-color;
-    }
-
-    .title-container {
-        margin: 0 0 2rem 0;
-        width: 1300px;
-        align-self: flex-start;
-        border-bottom: 0.25rem solid variables.$secondary-color;
-    }
-    
-    #portfolio-title {
-        justify-self: flex-start;
-        color: variables.$secondary-color;
-        margin: 2rem 0;
-    }
+    margin: 2rem 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .portfolio-content-container {
-        font-size: 1.5rem;
-    }
+  .portfolio-content-container {
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (min-width: 1500px){
-    .projects-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+@media screen and (min-width: 1500px) {
+  .projects-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    .projects-list .project-ref-container:nth-child(odd){
-        margin-right: 2.5rem;
-    }
-    .projects-list .project-ref-container:nth-child(5){
-        margin-right: 0;
-    }
+  .projects-list .project-ref-container:nth-child(odd) {
+    margin-right: 2.5rem;
+  }
+  .projects-list .project-ref-container:nth-child(5) {
+    margin-right: 0;
+  }
 }
-
-
-
-

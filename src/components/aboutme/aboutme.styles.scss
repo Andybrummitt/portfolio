@@ -1,173 +1,136 @@
 @use "../../styles/variables";
 
 .about-me-container {
-    background: variables.$primary-color;
-    overflow: hidden;
-    position: relative;
-    min-height: 90vh;
-    color: variables.$off-white-color;
-    padding: 0.5rem;
-    .title-container {
-        margin: 2rem auto;
-        width: 1300px;
-        align-self: flex-start;
-        border-bottom: 0.25rem solid variables.$secondary-color;
-    }
-    
-    .page-title {
-        justify-self: flex-start;
-        color: variables.$secondary-color;
-        margin: 2rem 0;
-    }
-}
-
-
-.sections-container {
-    height: fit-content;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  background: variables.$bg-gradient-light-to-dark;
+  overflow: hidden;
+  position: relative;
+  min-height: 90vh;
+  color: white;
+  padding: 0.5rem;
+  .about-me-inner-container {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    span {
+      color: variables.$secondary-color;
+    }
+  }
 }
 
-.animation-ref-container, .skills-ref-container {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+.sections-container {
+  h3 {
+    margin: 2rem 0;
+    text-align: center;
+  }
 }
 
-.intro-section {
-    width: 100%;
-
-    h2 {
-        margin: 2rem 0;
-        text-align: center;
-    }
-
-    h4 {
-        margin-bottom: 0.5rem;
-    }
-    a {
-        font-weight: bold;
-        color: variables.$secondary-color;
-    }
+.title-container {
+  margin: 0 0 2rem 0;
+  width: 1300px;
+  align-self: flex-start;
+  border-bottom: 0.25rem solid variables.$secondary-color;
 }
 
-.skills-section {
-    @extend .intro-section;
-    margin-top: 0rem;
+.page-title {
+  justify-self: flex-start;
+  color: variables.$secondary-color;
+  margin: 2rem 0;
+}
+
+.sections-container section {
+  margin: 4rem 0;
 }
 
 .button-container {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
-.skill-list-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    span {
-        margin: 0.3rem;
-    }
-    max-width: 100%;
-}
-
-.skill-container {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    width: 100px;
-    border-radius: 10rem;
-    border: 0.2rem solid variables.$secondary-color;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-        height: 0;
-        width: 0;
+.skills-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  li {
+    list-style-type: none;
+    margin: 1rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: variables.$secondary-color;
+      height: 8rem;
+      width: 8rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      color: black;
+      position: relative;
+      img {
+        width: 4rem;
+        height: auto;
+      }
+      p {
         position: absolute;
+        bottom: 5%;
+      }
     }
-}
-
-@media screen and (min-width: 520px) {
-    .intro-section, .skills-container {
-        h2 {
-            margin-bottom: 2rem;
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .skills-ref-container {
-        margin-top: 2rem;
+  .about-me-container {
+    .title-container {
+      margin: 4rem auto;
     }
-    .about-me-container {
-        .title-container {
-            margin: 4rem auto;
+  }
+
+  .skill-container {
+    margin: 0.75rem;
+    height: 140px;
+    width: 140px;
+  }
+
+  .skills-container {
+    h2 {
+      margin: 4rem 0 2rem 0;
+    }
+  }
+
+  .about-me-container {
+    font-size: 1.5rem;
+    flex-direction: row;
+
+    button a,
+    button {
+      font-size: 1.5rem;
+    }
+  }
+  .skills-container ul {
+    li {
+      div {
+        height: 10rem;
+        width: 10rem;
+
+        img {
+          width: 5rem;
         }
+      }
     }
-    
-    .skill-container {
-        margin: 0.75rem;
-        height: 140px;
-        width: 140px;
-    }
-
-    .skills-container {
-        h2 {
-            margin: 4rem 0 2rem 0;
-        }
-    }
-
-    .about-me-container {
-        font-size: 1.5rem;
-        flex-direction: row;
-
-        button a, button {
-            font-size: 1.5rem;
-        }
-    }
+  }
 }
-
-.skill-container:hover {
-    img {
-        animation: 1s scaleSkillImg forwards;
-    }
-}
-
-@keyframes scaleSkillImg {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    50% {
-        width: 200px;
-        height: auto; 
-        opacity: 0.5;   
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
 
 @media screen and (max-height: 600px) {
-    .intro-section {
-        font-size: 1.2rem;
-        width: 70%;
-        padding: 1rem;
+  .intro-section {
+    font-size: 1.2rem;
+    width: 70%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sections-container {
+    h3 {
+      font-size: 2rem;
     }
+  }
 }
-
-@media screen and (min-width: 1024px){
-
-}
-

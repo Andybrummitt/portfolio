@@ -5,12 +5,14 @@ import SkillsSection from "./SkillsSection.component";
 const AboutMe = () => {
   return (
     <div className="about-me-container" id="aboutme">
-    <div className="title-container">
-      <h1 className="page-title">About me</h1>
-      </div>
-      <div className="sections-container">
-        <AboutMeSection />
-        <SkillsSection />
+      <div className="about-me-inner-container">
+        <div className="title-container">
+          <h1 className="page-title">About me</h1>
+        </div>
+        <div className="sections-container">
+          <AboutMeSection />
+          <SkillsSection />
+        </div>
       </div>
     </div>
   );
